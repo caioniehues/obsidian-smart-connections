@@ -30,11 +30,30 @@ This enhanced implementation of Smart Connections focuses on **complete privacy 
 
 ## 📦 Installation
 
-### For End Users (Pre-built Release)
+### **🚀 Easy Installation via BRAT (Recommended)**
 
-1. **Download the Latest Release**
-   - Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](../../releases/latest)
-   - Or clone this repository for the development version
+1. **Install BRAT Plugin**
+   - In Obsidian, go to Settings → Community Plugins
+   - Search for and install "BRAT" (Beta Reviewer's Auto-update Tool)
+   - Enable BRAT plugin
+
+2. **Install Smart Connections Enhanced**
+   - Open BRAT settings
+   - Click "Add Beta plugin"
+   - Enter repository URL: `https://github.com/caioniehues/obsidian-smart-claude`
+   - Specify branch: `fix-hardcoded-paths` (contains dynamic path resolution)
+   - Click "Add Plugin"
+
+3. **Enable and Configure**
+   - Go to Settings → Community Plugins
+   - Enable "Smart Connections"
+   - BRAT will automatically handle updates!
+
+### For End Users (Manual Installation)
+
+1. **Download the Latest Files**
+   - Download `main.js`, `manifest.json`, and `styles.css` from this repository's `dist/` folder
+   - Or download from the [latest release](../../releases/latest)
 
 2. **Install in Obsidian**
    - Create folder: `VaultFolder/.obsidian/plugins/smart-connections/`
@@ -67,6 +86,36 @@ cd obsidian-smart-connections
 npm install
 npm run build
 ```
+
+### Path Configuration (Cross-Platform Support)
+
+This plugin now includes **dynamic path resolution** to work seamlessly across different systems and environments:
+
+#### **Automatic Path Detection**
+- **Plugin Installation**: Automatically detects `.obsidian/plugins/smart-connections/`
+- **Development Mode**: Works from any working directory
+- **JSBrains Dependencies**: Finds sibling directories or node_modules automatically
+
+#### **Custom Path Configuration**
+Create a `.env` file in the plugin root to override paths (copy from `.env.example`):
+
+```bash
+# Override dependency paths for development
+JSBRAINS_PATH=/path/to/local/jsbrains
+OBSIDIAN_SMART_ENV_PATH=/path/to/local/obsidian-smart-env
+
+# Specify plugin installation path
+OBSIDIAN_PLUGIN_PATH=/path/to/vault/.obsidian/plugins/smart-connections
+
+# Enable debug logging
+DEBUG_PATH_RESOLUTION=true
+```
+
+#### **Benefits**
+- ✅ **Cross-platform compatibility** (Windows, macOS, Linux)
+- ✅ **No hardcoded paths** - works on any system
+- ✅ **Developer-friendly** - easy to set up local development
+- ✅ **Plugin distribution ready** - users can install anywhere
 
 ## 🎯 Quick Start Guide
 

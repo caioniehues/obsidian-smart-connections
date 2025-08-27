@@ -1,8 +1,10 @@
 import test from 'ava';
 import fs from 'fs';
 import path from 'path';
+import { getPluginRoot } from '../utils/path-resolver.js';
 
-const BASE_PATH = '/Users/caio.niehues/CodeProjects';
+// Get the parent directory of the plugin (where sibling projects should be)
+const BASE_PATH = path.resolve(getPluginRoot(), '..');
 
 const requiredDirectories = [
   'jsbrains',

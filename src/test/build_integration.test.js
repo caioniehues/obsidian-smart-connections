@@ -3,10 +3,11 @@ import fs from 'fs';
 import path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
+import { getPluginRoot } from '../utils/path-resolver.js';
 
 const execAsync = promisify(exec);
 
-const PROJECT_ROOT = '/Users/caio.niehues/CodeProjects/obsidian-smart-claude';
+const PROJECT_ROOT = getPluginRoot();
 const DIST_DIR = path.join(PROJECT_ROOT, 'dist');
 
 test('dist directory is created after build', async t => {
