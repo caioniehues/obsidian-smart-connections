@@ -301,7 +301,7 @@ This plugin implements **dynamic path resolution** to eliminate hardcoded paths 
 #### In Test Files
 ```javascript
 // Old (hardcoded)
-const JSBRAINS_PATH = '/Users/caio.niehues/CodeProjects/jsbrains';
+const JSBRAINS_PATH = '/Users/username/CodeProjects/jsbrains';
 
 // New (dynamic)
 import { getDependencyPath } from '../utils/path-resolver.js';
@@ -311,7 +311,7 @@ const JSBRAINS_PATH = getDependencyPath('jsbrains');
 #### In Script Files
 ```javascript
 // Old (hardcoded)
-const PROJECT_ROOT = '/Users/caio.niehues/CodeProjects/obsidian-smart-claude';
+const PROJECT_ROOT = '/Users/username/CodeProjects/obsidian-smart-claude';
 
 // New (dynamic)
 import { getPluginRoot } from '../src/utils/path-resolver.js';

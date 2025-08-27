@@ -145,7 +145,7 @@ for (const [packageName, content] of Object.entries(packageExports)) {
 }
 
 // Also update smart-plugins-obsidian utils
-const pluginsUtilsPath = '/Users/caio.niehues/CodeProjects/smart-plugins-obsidian/utils.js';
+const pluginsUtilsPath = path.join(getDependencyPath('smart-plugins-obsidian'), 'utils.js');
 const pluginsUtilsContent = `export function get_smart_server_url() {
   return 'https://smart-connect.com';
 }
