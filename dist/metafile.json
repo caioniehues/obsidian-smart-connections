@@ -1,0 +1,5365 @@
+{
+  "inputs": {
+    "node_modules/obsidian-smart-env/node_modules/smart-environment/index.js": {
+      "bytes": 211,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/is_plain_object.js": {
+      "bytes": 550,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/deep_merge_no_overwrite.js": {
+      "bytes": 2485,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/is_plain_object.js",
+          "kind": "import-statement",
+          "original": "./is_plain_object.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/merge_env_config.js": {
+      "bytes": 4665,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/deep_merge_no_overwrite.js",
+          "kind": "import-statement",
+          "original": "./deep_merge_no_overwrite.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-file-system/index.js": {
+      "bytes": 314,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-file-system/adapters/obsidian.js": {
+      "bytes": 9929,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/index.js": {
+      "bytes": 282,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/utils/empty.js": {
+      "bytes": 129,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/utils/replace_html.js": {
+      "bytes": 627,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/utils/replace_with_fragment.js": {
+      "bytes": 491,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/utils/safe_inner_html.js": {
+      "bytes": 819,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/utils/replace_html.js",
+          "kind": "import-statement",
+          "original": "./replace_html.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/utils/replace_with_fragment.js",
+          "kind": "import-statement",
+          "original": "./replace_with_fragment.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/adapters/_adapter.js": {
+      "bytes": 23349,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/utils/empty.js",
+          "kind": "import-statement",
+          "original": "../utils/empty.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/utils/safe_inner_html.js",
+          "kind": "import-statement",
+          "original": "../utils/safe_inner_html.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-view/adapters/obsidian.js": {
+      "bytes": 4139,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-entities/index.js": {
+      "bytes": 197,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/index.js": {
+      "bytes": 269,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "../smart-entities/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/_adapter.js": {
+      "bytes": 5421,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/_file.js": {
+      "bytes": 1775,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/ajson_multi_file.js": {
+      "bytes": 10858,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/_file.js",
+          "kind": "import-statement",
+          "original": "./_file.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/data/ajson_multi_file.js": {
+      "bytes": 1326,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/ajson_multi_file.js",
+          "kind": "import-statement",
+          "original": "smart-collections/adapters/ajson_multi_file.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js": {
+      "bytes": 4706,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_adapter.js": {
+      "bytes": 1152,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/parsers/markdown.js": {
+      "bytes": 14835,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_file.js": {
+      "bytes": 9278,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/parsers/markdown.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/parsers/markdown.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_links.js": {
+      "bytes": 2832,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/parse_frontmatter.js": {
+      "bytes": 4410,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_tags.js": {
+      "bytes": 543,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/markdown_source.js": {
+      "bytes": 5569,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_file.js",
+          "kind": "import-statement",
+          "original": "./_file.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_links.js",
+          "kind": "import-statement",
+          "original": "../utils/get_markdown_links.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/parse_frontmatter.js",
+          "kind": "import-statement",
+          "original": "../utils/parse_frontmatter.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_tags.js",
+          "kind": "import-statement",
+          "original": "../utils/get_markdown_tags.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/adapters/smart-sources/obsidian_markdown.js": {
+      "bytes": 3565,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/markdown_source.js",
+          "kind": "import-statement",
+          "original": "smart-sources/adapters/markdown_source.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/adapters/smart-sources/bases.js": {
+      "bytes": 658,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_file.js",
+          "kind": "import-statement",
+          "original": "smart-sources/adapters/_file.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/adapters/smart-sources/excalidraw.js": {
+      "bytes": 1838,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/adapters/smart-sources/obsidian_markdown.js",
+          "kind": "import-statement",
+          "original": "./obsidian_markdown.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/index.js": {
+      "bytes": 266,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "../smart-entities/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/data/ajson_multi_file.js": {
+      "bytes": 2906,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/ajson_multi_file.js",
+          "kind": "import-statement",
+          "original": "smart-collections/adapters/ajson_multi_file.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/_adapter.js": {
+      "bytes": 3448,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_line_range.js": {
+      "bytes": 162,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/markdown_block.js": {
+      "bytes": 6109,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_line_range.js",
+          "kind": "import-statement",
+          "original": "smart-sources/utils/get_line_range.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/components/settings.js": {
+      "bytes": 3154,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-model/components/settings.js": {
+      "bytes": 525,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/index.js": {
+      "bytes": 306,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-model/adapters/_adapter.js": {
+      "bytes": 3732,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_adapter.js": {
+      "bytes": 3239,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "smart-model/adapters/_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-http-request/index.js": {
+      "bytes": 223,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/_adapter.js": {
+      "bytes": 521,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/fetch.js": {
+      "bytes": 757,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_api.js": {
+      "bytes": 8102,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-http-request/index.js",
+          "kind": "import-statement",
+          "original": "smart-http-request"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/fetch.js",
+          "kind": "import-statement",
+          "original": "smart-http-request/adapters/fetch.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/base64-js/index.js": {
+      "bytes": 3932,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/chunk-ZDNLBERF.js": {
+      "bytes": 8627,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/base64-js/index.js",
+          "kind": "import-statement",
+          "original": "base64-js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/lite.js": {
+      "bytes": 73,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/chunk-ZDNLBERF.js",
+          "kind": "import-statement",
+          "original": "./chunk-ZDNLBERF.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/utils/fetch_cache.js": {
+      "bytes": 1521,
+      "imports": [
+        {
+          "path": "node:fs/promises",
+          "kind": "dynamic-import",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "dynamic-import",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "dynamic-import",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/openai.js": {
+      "bytes": 7379,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/lite.js",
+          "kind": "import-statement",
+          "original": "js-tiktoken/lite"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/utils/fetch_cache.js",
+          "kind": "import-statement",
+          "original": "../utils/fetch_cache.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_message.js": {
+      "bytes": 3867,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/iframe.js": {
+      "bytes": 3798,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_message.js",
+          "kind": "import-statement",
+          "original": "./_message.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/connectors/transformers_iframe.js": {
+      "bytes": 33905,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/transformers.js": {
+      "bytes": 10319,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "@huggingface/transformers",
+          "kind": "dynamic-import",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/transformers_iframe.js": {
+      "bytes": 1834,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/iframe.js",
+          "kind": "import-statement",
+          "original": "./iframe.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/connectors/transformers_iframe.js",
+          "kind": "import-statement",
+          "original": "../connectors/transformers_iframe.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/transformers.js",
+          "kind": "import-statement",
+          "original": "./transformers.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/ollama.js": {
+      "bytes": 11418,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/cl100k_base.json": {
+      "bytes": 1090792,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "json"
+      }
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/gemini.js": {
+      "bytes": 6545,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/lite.js",
+          "kind": "import-statement",
+          "original": "js-tiktoken/lite"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/cl100k_base.json",
+          "kind": "import-statement",
+          "original": "../cl100k_base.json",
+          "with": {
+            "type": "json"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/index.js": {
+      "bytes": 302,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/streamer.js": {
+      "bytes": 5469,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_adapter.js": {
+      "bytes": 3386,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "smart-model/adapters/_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js": {
+      "bytes": 27004,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-http-request/index.js",
+          "kind": "import-statement",
+          "original": "smart-http-request"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/streamer.js",
+          "kind": "import-statement",
+          "original": "../streamer.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/fetch.js",
+          "kind": "import-statement",
+          "original": "smart-http-request/adapters/fetch.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/anthropic.js": {
+      "bytes": 17026,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/openai.js": {
+      "bytes": 6567,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/azure.js": {
+      "bytes": 4712,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/openai.js",
+          "kind": "import-statement",
+          "original": "./openai.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/google.js": {
+      "bytes": 13496,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/cohere.js": {
+      "bytes": 9605,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/open_router.js": {
+      "bytes": 5469,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/lm_studio.js": {
+      "bytes": 5458,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/ollama.js": {
+      "bytes": 10808,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_custom.js": {
+      "bytes": 6590,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/anthropic.js",
+          "kind": "import-statement",
+          "original": "./anthropic.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/google.js",
+          "kind": "import-statement",
+          "original": "./google.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/lm_studio.js",
+          "kind": "import-statement",
+          "original": "./lm_studio.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/ollama.js",
+          "kind": "import-statement",
+          "original": "./ollama.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/groq.js": {
+      "bytes": 3624,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/xai.js": {
+      "bytes": 2900,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/deepseek.js": {
+      "bytes": 4000,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters.js": {
+      "bytes": 1839,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/anthropic.js",
+          "kind": "import-statement",
+          "original": "./adapters/anthropic.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/azure.js",
+          "kind": "import-statement",
+          "original": "./adapters/azure.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/openai.js",
+          "kind": "import-statement",
+          "original": "./adapters/openai.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/google.js",
+          "kind": "import-statement",
+          "original": "./adapters/google.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/cohere.js",
+          "kind": "import-statement",
+          "original": "./adapters/cohere.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/open_router.js",
+          "kind": "import-statement",
+          "original": "./adapters/open_router.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_custom.js",
+          "kind": "import-statement",
+          "original": "./adapters/_custom.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/ollama.js",
+          "kind": "import-statement",
+          "original": "./adapters/ollama.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/lm_studio.js",
+          "kind": "import-statement",
+          "original": "./adapters/lm_studio.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/groq.js",
+          "kind": "import-statement",
+          "original": "./adapters/groq.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/xai.js",
+          "kind": "import-statement",
+          "original": "./adapters/xai.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/deepseek.js",
+          "kind": "import-statement",
+          "original": "./adapters/deepseek.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-completions/index.js": {
+      "bytes": 411,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-utils/sort_by_score.js": {
+      "bytes": 396,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-entities/actions/find_connections.js": {
+      "bytes": 1238,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/sort_by_score.js",
+          "kind": "import-statement",
+          "original": "smart-utils/sort_by_score.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-collections/utils/get_item_display_name.js": {
+      "bytes": 351,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/utils/get_block_display_name.js": {
+      "bytes": 496,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-collections/utils/get_item_display_name.js",
+          "kind": "import-statement",
+          "original": "smart-collections/utils/get_item_display_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/smart_block.js": {
+      "bytes": 12222,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "smart-entities"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-entities/actions/find_connections.js",
+          "kind": "import-statement",
+          "original": "smart-entities/actions/find_connections.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/utils/get_block_display_name.js",
+          "kind": "import-statement",
+          "original": "./utils/get_block_display_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/components/source.js": {
+      "bytes": 992,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-utils/geom.js": {
+      "bytes": 2215,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/actions/find_connections.js": {
+      "bytes": 2290,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/sort_by_score.js",
+          "kind": "import-statement",
+          "original": "smart-utils/sort_by_score.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-entities/actions/find_connections.js",
+          "kind": "import-statement",
+          "original": "smart-entities/actions/find_connections.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-sources/smart_source.js": {
+      "bytes": 18698,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "smart-entities"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/components/source.js",
+          "kind": "import-statement",
+          "original": "./components/source.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/geom.js",
+          "kind": "import-statement",
+          "original": "smart-utils/geom.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/actions/find_connections.js",
+          "kind": "import-statement",
+          "original": "./actions/find_connections.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-blocks/content_parsers/parse_blocks.js": {
+      "bytes": 3516,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_links.js",
+          "kind": "import-statement",
+          "original": "smart-sources/utils/get_markdown_links.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_line_range.js",
+          "kind": "import-statement",
+          "original": "smart-sources/utils/get_line_range.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/parsers/markdown.js",
+          "kind": "import-statement",
+          "original": "../parsers/markdown.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/format_collection_name.js": {
+      "bytes": 191,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/collection_settings.js": {
+      "bytes": 1309,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/utils/format_collection_name.js",
+          "kind": "import-statement",
+          "original": "../utils/format_collection_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/modals/exclude_folders_fuzzy.js": {
+      "bytes": 1270,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/modals/excluded_sources.js": {
+      "bytes": 1788,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/modals/env_stats.js": {
+      "bytes": 652,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/modals/exclude_files_fuzzy.js": {
+      "bytes": 1515,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/env_settings.css": {
+      "bytes": 550,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/obsidian-smart-env/components/env_settings.js": {
+      "bytes": 12495,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/modals/exclude_folders_fuzzy.js",
+          "kind": "import-statement",
+          "original": "../modals/exclude_folders_fuzzy.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/modals/excluded_sources.js",
+          "kind": "import-statement",
+          "original": "../modals/excluded_sources.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/modals/env_stats.js",
+          "kind": "import-statement",
+          "original": "../modals/env_stats.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/modals/exclude_files_fuzzy.js",
+          "kind": "import-statement",
+          "original": "../modals/exclude_files_fuzzy.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/env_settings.css",
+          "kind": "import-statement",
+          "original": "./env_settings.css",
+          "with": {
+            "type": "css"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/env_stats.js": {
+      "bytes": 4574,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/utils/format_collection_name.js",
+          "kind": "import-statement",
+          "original": "../utils/format_collection_name"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/lean_coffee_callout.js": {
+      "bytes": 1943,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/muted_notices.js": {
+      "bytes": 1278,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/source_inspector.css": {
+      "bytes": 551,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/obsidian-smart-env/components/source_inspector.js": {
+      "bytes": 4776,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/components/source_inspector.css",
+          "kind": "import-statement",
+          "original": "./source_inspector.css",
+          "with": {
+            "type": "css"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/supporter_callout.js": {
+      "bytes": 3076,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/components/user_agreement_callout.js": {
+      "bytes": 1608,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/smart_env.config.js": {
+      "bytes": 1273,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/components/collection_settings.js",
+          "kind": "import-statement",
+          "original": "./components/collection_settings.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/env_settings.js",
+          "kind": "import-statement",
+          "original": "./components/env_settings.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/env_stats.js",
+          "kind": "import-statement",
+          "original": "./components/env_stats.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/lean_coffee_callout.js",
+          "kind": "import-statement",
+          "original": "./components/lean_coffee_callout.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/muted_notices.js",
+          "kind": "import-statement",
+          "original": "./components/muted_notices.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/source_inspector.js",
+          "kind": "import-statement",
+          "original": "./components/source_inspector.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/supporter_callout.js",
+          "kind": "import-statement",
+          "original": "./components/supporter_callout.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/user_agreement_callout.js",
+          "kind": "import-statement",
+          "original": "./components/user_agreement_callout.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/default.config.js": {
+      "bytes": 6471,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-file-system/index.js",
+          "kind": "import-statement",
+          "original": "smart-file-system"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-file-system/adapters/obsidian.js",
+          "kind": "import-statement",
+          "original": "smart-file-system/adapters/obsidian.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/index.js",
+          "kind": "import-statement",
+          "original": "smart-view"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-view/adapters/obsidian.js",
+          "kind": "import-statement",
+          "original": "smart-view/adapters/obsidian.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/index.js",
+          "kind": "import-statement",
+          "original": "smart-sources"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/data/ajson_multi_file.js",
+          "kind": "import-statement",
+          "original": "smart-sources/adapters/data/ajson_multi_file.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/adapters/smart-sources/obsidian_markdown.js",
+          "kind": "import-statement",
+          "original": "./adapters/smart-sources/obsidian_markdown.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/adapters/smart-sources/bases.js",
+          "kind": "import-statement",
+          "original": "./adapters/smart-sources/bases.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/adapters/smart-sources/excalidraw.js",
+          "kind": "import-statement",
+          "original": "./adapters/smart-sources/excalidraw.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/index.js",
+          "kind": "import-statement",
+          "original": "smart-blocks"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/data/ajson_multi_file.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/adapters/data/ajson_multi_file.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/markdown_block.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/adapters/markdown_block.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/components/settings.js",
+          "kind": "import-statement",
+          "original": "smart-sources/components/settings.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-model/components/settings.js",
+          "kind": "import-statement",
+          "original": "smart-model/components/settings.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/index.js",
+          "kind": "import-statement",
+          "original": "smart-embed-model"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/openai.js",
+          "kind": "import-statement",
+          "original": "smart-embed-model/adapters/openai.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/transformers_iframe.js",
+          "kind": "import-statement",
+          "original": "smart-embed-model/adapters/transformers_iframe.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/ollama.js",
+          "kind": "import-statement",
+          "original": "smart-embed-model/adapters/ollama.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/gemini.js",
+          "kind": "import-statement",
+          "original": "smart-embed-model/adapters/gemini.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/index.js",
+          "kind": "import-statement",
+          "original": "smart-chat-model"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters.js",
+          "kind": "import-statement",
+          "original": "smart-chat-model/adapters.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-http-request/index.js",
+          "kind": "import-statement",
+          "original": "smart-http-request"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-completions/index.js",
+          "kind": "import-statement",
+          "original": "smart-completions"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/smart_block.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/smart_block.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-sources/smart_source.js",
+          "kind": "import-statement",
+          "original": "smart-sources/smart_source.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-blocks/content_parsers/parse_blocks.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/content_parsers/parse_blocks.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/merge_env_config.js",
+          "kind": "import-statement",
+          "original": "smart-environment/utils/merge_env_config.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/smart_env.config.js",
+          "kind": "import-statement",
+          "original": "./smart_env.config.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/add_icons.js": {
+      "bytes": 1183,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-notices/notices.js": {
+      "bytes": 4705,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-notices/smart_notices.js": {
+      "bytes": 7967,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-notices/notices.js",
+          "kind": "import-statement",
+          "original": "./notices.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/styles.css": {
+      "bytes": 395,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-plugins-obsidian/utils.js": {
+      "bytes": 451,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/sc_oauth.js": {
+      "bytes": 4452,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-plugins-obsidian/utils.js",
+          "kind": "import-statement",
+          "original": "smart-plugins-obsidian/utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/open_url_externally.js": {
+      "bytes": 340,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/views/source_inspector.js": {
+      "bytes": 592,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/register_status_bar_context_menu.js": {
+      "bytes": 2901,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/views/source_inspector.js",
+          "kind": "import-statement",
+          "original": "../views/source_inspector.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/modals/env_stats.js",
+          "kind": "import-statement",
+          "original": "../modals/env_stats.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-utils/file_tree.js": {
+      "bytes": 3226,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/replace_folder_tree_var.js": {
+      "bytes": 409,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/file_tree.js",
+          "kind": "import-statement",
+          "original": "smart-utils/file_tree.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/replace_folders_top_var.js": {
+      "bytes": 372,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/file_tree.js",
+          "kind": "import-statement",
+          "original": "smart-utils/file_tree.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/replace_recent_n_var.js": {
+      "bytes": 520,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/replace_vault_tags_var.js": {
+      "bytes": 315,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/register_completion_variable_adapter_replacements.js": {
+      "bytes": 1101,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-completions/index.js",
+          "kind": "import-statement",
+          "original": "smart-completions"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/replace_folder_tree_var.js",
+          "kind": "import-statement",
+          "original": "./replace_folder_tree_var.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/replace_folders_top_var.js",
+          "kind": "import-statement",
+          "original": "./replace_folders_top_var.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/replace_recent_n_var.js",
+          "kind": "import-statement",
+          "original": "./replace_recent_n_var.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/replace_vault_tags_var.js",
+          "kind": "import-statement",
+          "original": "./replace_vault_tags_var.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/smart_env.js": {
+      "bytes": 15392,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-environment/index.js",
+          "kind": "import-statement",
+          "original": "smart-environment"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/merge_env_config.js",
+          "kind": "import-statement",
+          "original": "smart-environment/utils/merge_env_config.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/default.config.js",
+          "kind": "import-statement",
+          "original": "./default.config.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/add_icons.js",
+          "kind": "import-statement",
+          "original": "./utils/add_icons.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-notices/smart_notices.js",
+          "kind": "import-statement",
+          "original": "smart-notices/smart_notices.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/styles.css",
+          "kind": "import-statement",
+          "original": "./styles.css",
+          "with": {
+            "type": "css"
+          }
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/sc_oauth.js",
+          "kind": "import-statement",
+          "original": "./sc_oauth.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/open_url_externally.js",
+          "kind": "import-statement",
+          "original": "./utils/open_url_externally.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/register_status_bar_context_menu.js",
+          "kind": "import-statement",
+          "original": "./utils/register_status_bar_context_menu.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/register_completion_variable_adapter_replacements.js",
+          "kind": "import-statement",
+          "original": "./utils/register_completion_variable_adapter_replacements.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/node_modules/smart-utils/camel_case_to_snake_case.js": {
+      "bytes": 328,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/index.js": {
+      "bytes": 1412,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/smart_env.js",
+          "kind": "import-statement",
+          "original": "./smart_env.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/merge_env_config.js",
+          "kind": "import-statement",
+          "original": "smart-environment/utils/merge_env_config.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/node_modules/smart-utils/camel_case_to_snake_case.js",
+          "kind": "import-statement",
+          "original": "smart-utils/camel_case_to_snake_case.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/adapters/_adapter.js": {
+      "bytes": 5421,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/adapters/_file.js": {
+      "bytes": 1775,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/adapters/ajson_multi_file.js": {
+      "bytes": 10858,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/adapters/_file.js",
+          "kind": "import-statement",
+          "original": "./_file.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-file-system/utils/glob_to_regex.js": {
+      "bytes": 5878,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-file-system/utils/fuzzy_search.js": {
+      "bytes": 930,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-file-system/smart_fs.js": {
+      "bytes": 13805,
+      "imports": [
+        {
+          "path": "node_modules/smart-file-system/utils/glob_to_regex.js",
+          "kind": "import-statement",
+          "original": "./utils/glob_to_regex.js"
+        },
+        {
+          "path": "node_modules/smart-file-system/utils/fuzzy_search.js",
+          "kind": "import-statement",
+          "original": "./utils/fuzzy_search.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-file-system/adapters/obsidian.js": {
+      "bytes": 9929,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-view/utils/empty.js": {
+      "bytes": 129,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-view/utils/replace_html.js": {
+      "bytes": 627,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-view/utils/replace_with_fragment.js": {
+      "bytes": 491,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-view/utils/safe_inner_html.js": {
+      "bytes": 819,
+      "imports": [
+        {
+          "path": "node_modules/smart-view/utils/replace_html.js",
+          "kind": "import-statement",
+          "original": "./replace_html.js"
+        },
+        {
+          "path": "node_modules/smart-view/utils/replace_with_fragment.js",
+          "kind": "import-statement",
+          "original": "./replace_with_fragment.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-utils/index.js": {
+      "bytes": 807,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-view/smart_view.js": {
+      "bytes": 8178,
+      "imports": [
+        {
+          "path": "node_modules/smart-view/utils/empty.js",
+          "kind": "import-statement",
+          "original": "./utils/empty.js"
+        },
+        {
+          "path": "node_modules/smart-view/utils/safe_inner_html.js",
+          "kind": "import-statement",
+          "original": "./utils/safe_inner_html.js"
+        },
+        {
+          "path": "node_modules/smart-utils/index.js",
+          "kind": "import-statement",
+          "original": "smart-utils"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-view/adapters/_adapter.js": {
+      "bytes": 23349,
+      "imports": [
+        {
+          "path": "node_modules/smart-view/utils/empty.js",
+          "kind": "import-statement",
+          "original": "../utils/empty.js"
+        },
+        {
+          "path": "node_modules/smart-view/utils/safe_inner_html.js",
+          "kind": "import-statement",
+          "original": "../utils/safe_inner_html.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-view/adapters/obsidian.js": {
+      "bytes": 4139,
+      "imports": [
+        {
+          "path": "node_modules/smart-view/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/components/settings.js": {
+      "bytes": 687,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/enhanced_model_settings.js": {
+      "bytes": 8350,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/modals/story.js": {
+      "bytes": 1515,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/open_url_externally.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/open_url_externally.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/modals/connections_filter.js": {
+      "bytes": 763,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/connections.js": {
+      "bytes": 5602,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/modals/story.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/modals/story.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/views/source_inspector.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/views/source_inspector.js"
+        },
+        {
+          "path": "src/modals/connections_filter.js",
+          "kind": "import-statement",
+          "original": "../modals/connections_filter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/lookup.js": {
+      "bytes": 5184,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/connections_results.js": {
+      "bytes": 1882,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/views/smart_chat.js": {
+      "bytes": 10273,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/index.js": {
+      "bytes": 302,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-http-request/index.js": {
+      "bytes": 223,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/streamer.js": {
+      "bytes": 5469,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-model/adapters/_adapter.js": {
+      "bytes": 3732,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/_adapter.js": {
+      "bytes": 3386,
+      "imports": [
+        {
+          "path": "node_modules/smart-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "smart-model/adapters/_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-http-request/adapters/_adapter.js": {
+      "bytes": 521,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-http-request/adapters/fetch.js": {
+      "bytes": 757,
+      "imports": [
+        {
+          "path": "node_modules/smart-http-request/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/_api.js": {
+      "bytes": 27004,
+      "imports": [
+        {
+          "path": "node_modules/smart-http-request/index.js",
+          "kind": "import-statement",
+          "original": "smart-http-request"
+        },
+        {
+          "path": "node_modules/smart-chat-model/streamer.js",
+          "kind": "import-statement",
+          "original": "../streamer.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        },
+        {
+          "path": "node_modules/smart-http-request/adapters/fetch.js",
+          "kind": "import-statement",
+          "original": "smart-http-request/adapters/fetch.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/anthropic.js": {
+      "bytes": 17026,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/openai.js": {
+      "bytes": 6567,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/azure.js": {
+      "bytes": 4712,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/openai.js",
+          "kind": "import-statement",
+          "original": "./openai.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/google.js": {
+      "bytes": 13496,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/cohere.js": {
+      "bytes": 9605,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/open_router.js": {
+      "bytes": 5469,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/lm_studio.js": {
+      "bytes": 5458,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/ollama.js": {
+      "bytes": 10808,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/_custom.js": {
+      "bytes": 6590,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/anthropic.js",
+          "kind": "import-statement",
+          "original": "./anthropic.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/google.js",
+          "kind": "import-statement",
+          "original": "./google.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/lm_studio.js",
+          "kind": "import-statement",
+          "original": "./lm_studio.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/ollama.js",
+          "kind": "import-statement",
+          "original": "./ollama.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/groq.js": {
+      "bytes": 3624,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/xai.js": {
+      "bytes": 2900,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters/deepseek.js": {
+      "bytes": 4000,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/_api.js",
+          "kind": "import-statement",
+          "original": "./_api.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-model/adapters.js": {
+      "bytes": 1839,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-model/adapters/anthropic.js",
+          "kind": "import-statement",
+          "original": "./adapters/anthropic.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/azure.js",
+          "kind": "import-statement",
+          "original": "./adapters/azure.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/openai.js",
+          "kind": "import-statement",
+          "original": "./adapters/openai.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/google.js",
+          "kind": "import-statement",
+          "original": "./adapters/google.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/cohere.js",
+          "kind": "import-statement",
+          "original": "./adapters/cohere.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/open_router.js",
+          "kind": "import-statement",
+          "original": "./adapters/open_router.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/_custom.js",
+          "kind": "import-statement",
+          "original": "./adapters/_custom.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/ollama.js",
+          "kind": "import-statement",
+          "original": "./adapters/ollama.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/lm_studio.js",
+          "kind": "import-statement",
+          "original": "./adapters/lm_studio.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/groq.js",
+          "kind": "import-statement",
+          "original": "./adapters/groq.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/xai.js",
+          "kind": "import-statement",
+          "original": "./adapters/xai.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters/deepseek.js",
+          "kind": "import-statement",
+          "original": "./adapters/deepseek.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-entities/index.js": {
+      "bytes": 197,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-sources/index.js": {
+      "bytes": 269,
+      "imports": [
+        {
+          "path": "node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "../smart-entities/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/threads.js": {
+      "bytes": 5452,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/utils/ScTranslations.json": {
+      "bytes": 10801,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "json"
+      }
+    },
+    "smart-chat-v0/utils/self_referential_keywords.js": {
+      "bytes": 1251,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/ScTranslations.json",
+          "kind": "import-statement",
+          "original": "smart-chat-obsidian/src/utils/ScTranslations.json",
+          "with": {
+            "type": "json"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/smart_threads.js": {
+      "bytes": 6957,
+      "imports": [
+        {
+          "path": "node_modules/smart-sources/index.js",
+          "kind": "import-statement",
+          "original": "smart-sources"
+        },
+        {
+          "path": "smart-chat-v0/components/threads.js",
+          "kind": "import-statement",
+          "original": "./components/threads.js"
+        },
+        {
+          "path": "smart-chat-v0/utils/self_referential_keywords.js",
+          "kind": "import-statement",
+          "original": "./utils/self_referential_keywords.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/thread.js": {
+      "bytes": 12287,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/utils/folder_references.js": {
+      "bytes": 2300,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/utils/internal_links.js": {
+      "bytes": 1082,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/error.js": {
+      "bytes": 5526,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/smart_thread.js": {
+      "bytes": 21867,
+      "imports": [
+        {
+          "path": "node_modules/smart-sources/index.js",
+          "kind": "import-statement",
+          "original": "smart-sources"
+        },
+        {
+          "path": "smart-chat-v0/components/thread.js",
+          "kind": "import-statement",
+          "original": "./components/thread.js"
+        },
+        {
+          "path": "smart-chat-v0/utils/folder_references.js",
+          "kind": "import-statement",
+          "original": "./utils/folder_references.js"
+        },
+        {
+          "path": "smart-chat-v0/utils/internal_links.js",
+          "kind": "import-statement",
+          "original": "./utils/internal_links.js"
+        },
+        {
+          "path": "smart-chat-v0/utils/self_referential_keywords.js",
+          "kind": "import-statement",
+          "original": "./utils/self_referential_keywords.js"
+        },
+        {
+          "path": "smart-chat-v0/components/error.js",
+          "kind": "import-statement",
+          "original": "./components/error.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-blocks/index.js": {
+      "bytes": 266,
+      "imports": [
+        {
+          "path": "node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "../smart-entities/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/smart_messages.js": {
+      "bytes": 932,
+      "imports": [
+        {
+          "path": "node_modules/smart-blocks/index.js",
+          "kind": "import-statement",
+          "original": "smart-blocks"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/message.js": {
+      "bytes": 7566,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/context.js": {
+      "bytes": 5120,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/tool_calls.js": {
+      "bytes": 3142,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/components/system_message.js": {
+      "bytes": 3617,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/smart_message.js": {
+      "bytes": 15311,
+      "imports": [
+        {
+          "path": "node_modules/smart-blocks/index.js",
+          "kind": "import-statement",
+          "original": "smart-blocks"
+        },
+        {
+          "path": "smart-chat-v0/components/message.js",
+          "kind": "import-statement",
+          "original": "./components/message"
+        },
+        {
+          "path": "smart-chat-v0/components/context.js",
+          "kind": "import-statement",
+          "original": "./components/context"
+        },
+        {
+          "path": "smart-chat-v0/components/tool_calls.js",
+          "kind": "import-statement",
+          "original": "./components/tool_calls"
+        },
+        {
+          "path": "smart-chat-v0/components/system_message.js",
+          "kind": "import-statement",
+          "original": "./components/system_message"
+        },
+        {
+          "path": "smart-chat-v0/utils/self_referential_keywords.js",
+          "kind": "import-statement",
+          "original": "./utils/self_referential_keywords"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/index.js": {
+      "bytes": 1388,
+      "imports": [
+        {
+          "path": "smart-chat-v0/smart_threads.js",
+          "kind": "import-statement",
+          "original": "./smart_threads.js"
+        },
+        {
+          "path": "smart-chat-v0/smart_thread.js",
+          "kind": "import-statement",
+          "original": "./smart_thread.js"
+        },
+        {
+          "path": "smart-chat-v0/smart_messages.js",
+          "kind": "import-statement",
+          "original": "./smart_messages.js"
+        },
+        {
+          "path": "smart-chat-v0/smart_message.js",
+          "kind": "import-statement",
+          "original": "./smart_message.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/sc_thread.js": {
+      "bytes": 5253,
+      "imports": [
+        {
+          "path": "smart-chat-v0/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart-chat-v0/adapters/_adapter.js": {
+      "bytes": 2340,
+      "imports": [],
+      "format": "esm"
+    },
+    "smart-chat-v0/adapters/json.js": {
+      "bytes": 1672,
+      "imports": [
+        {
+          "path": "smart-chat-v0/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "./_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/claude_code_cli_adapter.js": {
+      "bytes": 15723,
+      "imports": [
+        {
+          "path": "child_process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-utils/sort_by_score.js": {
+      "bytes": 396,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-utils/create_hash.js": {
+      "bytes": 4706,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-entities/actions/find_connections.js": {
+      "bytes": 1238,
+      "imports": [
+        {
+          "path": "node_modules/smart-utils/sort_by_score.js",
+          "kind": "import-statement",
+          "original": "smart-utils/sort_by_score.js"
+        },
+        {
+          "path": "node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/utils/get_item_display_name.js": {
+      "bytes": 351,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-blocks/utils/get_block_display_name.js": {
+      "bytes": 496,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/utils/get_item_display_name.js",
+          "kind": "import-statement",
+          "original": "smart-collections/utils/get_item_display_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-blocks/smart_block.js": {
+      "bytes": 12222,
+      "imports": [
+        {
+          "path": "node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "smart-entities"
+        },
+        {
+          "path": "node_modules/smart-entities/actions/find_connections.js",
+          "kind": "import-statement",
+          "original": "smart-entities/actions/find_connections.js"
+        },
+        {
+          "path": "node_modules/smart-blocks/utils/get_block_display_name.js",
+          "kind": "import-statement",
+          "original": "./utils/get_block_display_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-sources/components/source.js": {
+      "bytes": 992,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-utils/geom.js": {
+      "bytes": 2215,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-sources/actions/find_connections.js": {
+      "bytes": 2290,
+      "imports": [
+        {
+          "path": "node_modules/smart-utils/sort_by_score.js",
+          "kind": "import-statement",
+          "original": "smart-utils/sort_by_score.js"
+        },
+        {
+          "path": "node_modules/smart-entities/actions/find_connections.js",
+          "kind": "import-statement",
+          "original": "smart-entities/actions/find_connections.js"
+        },
+        {
+          "path": "node_modules/smart-utils/create_hash.js",
+          "kind": "import-statement",
+          "original": "smart-utils/create_hash.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-sources/smart_source.js": {
+      "bytes": 18698,
+      "imports": [
+        {
+          "path": "node_modules/smart-entities/index.js",
+          "kind": "import-statement",
+          "original": "smart-entities"
+        },
+        {
+          "path": "node_modules/smart-sources/components/source.js",
+          "kind": "import-statement",
+          "original": "./components/source.js"
+        },
+        {
+          "path": "node_modules/smart-utils/geom.js",
+          "kind": "import-statement",
+          "original": "smart-utils/geom.js"
+        },
+        {
+          "path": "node_modules/smart-sources/actions/find_connections.js",
+          "kind": "import-statement",
+          "original": "./actions/find_connections.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/smart_env.config.js": {
+      "bytes": 7014,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/adapters/ajson_multi_file.js",
+          "kind": "import-statement",
+          "original": "smart-collections/adapters/ajson_multi_file.js"
+        },
+        {
+          "path": "node_modules/smart-file-system/smart_fs.js",
+          "kind": "import-statement",
+          "original": "smart-file-system/smart_fs.js"
+        },
+        {
+          "path": "node_modules/smart-file-system/adapters/obsidian.js",
+          "kind": "import-statement",
+          "original": "smart-file-system/adapters/obsidian.js"
+        },
+        {
+          "path": "node_modules/smart-view/smart_view.js",
+          "kind": "import-statement",
+          "original": "smart-view/smart_view.js"
+        },
+        {
+          "path": "node_modules/smart-view/adapters/obsidian.js",
+          "kind": "import-statement",
+          "original": "smart-view/adapters/obsidian.js"
+        },
+        {
+          "path": "node_modules/smart-collections/components/settings.js",
+          "kind": "import-statement",
+          "original": "smart-collections/components/settings.js"
+        },
+        {
+          "path": "src/components/enhanced_model_settings.js",
+          "kind": "import-statement",
+          "original": "./components/enhanced_model_settings.js"
+        },
+        {
+          "path": "src/components/connections.js",
+          "kind": "import-statement",
+          "original": "./components/connections.js"
+        },
+        {
+          "path": "src/components/lookup.js",
+          "kind": "import-statement",
+          "original": "./components/lookup.js"
+        },
+        {
+          "path": "src/components/connections_results.js",
+          "kind": "import-statement",
+          "original": "./components/connections_results.js"
+        },
+        {
+          "path": "src/views/smart_chat.js",
+          "kind": "import-statement",
+          "original": "./views/smart_chat.js"
+        },
+        {
+          "path": "node_modules/smart-chat-model/index.js",
+          "kind": "import-statement",
+          "original": "smart-chat-model"
+        },
+        {
+          "path": "node_modules/smart-chat-model/adapters.js",
+          "kind": "import-statement",
+          "original": "smart-chat-model/adapters.js"
+        },
+        {
+          "path": "node_modules/smart-http-request/index.js",
+          "kind": "import-statement",
+          "original": "smart-http-request"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "smart-chat-v0/index.js",
+          "kind": "import-statement",
+          "original": "../smart-chat-v0/index.js"
+        },
+        {
+          "path": "smart-chat-v0/sc_thread.js",
+          "kind": "import-statement",
+          "original": "../smart-chat-v0/sc_thread.js"
+        },
+        {
+          "path": "smart-chat-v0/components/thread.js",
+          "kind": "import-statement",
+          "original": "../smart-chat-v0/components/thread.js"
+        },
+        {
+          "path": "smart-chat-v0/adapters/json.js",
+          "kind": "import-statement",
+          "original": "../smart-chat-v0/adapters/json.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/components/source_inspector.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/components/source_inspector.js"
+        },
+        {
+          "path": "src/adapters/claude_code_cli_adapter.js",
+          "kind": "import-statement",
+          "original": "./adapters/claude_code_cli_adapter.js"
+        },
+        {
+          "path": "node_modules/smart-blocks/smart_block.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/smart_block.js"
+        },
+        {
+          "path": "node_modules/smart-sources/smart_source.js",
+          "kind": "import-statement",
+          "original": "smart-sources/smart_source.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/register_block_hover_popover.js": {
+      "bytes": 1201,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/drag.js": {
+      "bytes": 626,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/connections_result.js": {
+      "bytes": 8926,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/register_block_hover_popover.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/register_block_hover_popover.js"
+        },
+        {
+          "path": "src/utils/drag.js",
+          "kind": "import-statement",
+          "original": "../utils/drag.js"
+        },
+        {
+          "path": "node_modules/smart-blocks/utils/get_block_display_name.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/utils/get_block_display_name.js"
+        },
+        {
+          "path": "node_modules/smart-collections/utils/get_item_display_name.js",
+          "kind": "import-statement",
+          "original": "smart-collections/utils/get_item_display_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/connections_v1.js": {
+      "bytes": 4274,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/modals/story.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/modals/story.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/toggle_plugin_ribbon_icon.js": {
+      "bytes": 1199,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/index.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/main_settings.js": {
+      "bytes": 6314,
+      "imports": [
+        {
+          "path": "node_modules/obsidian-smart-env/modals/story.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/modals/story.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/open_url_externally.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/open_url_externally.js"
+        },
+        {
+          "path": "src/utils/toggle_plugin_ribbon_icon.js",
+          "kind": "import-statement",
+          "original": "../utils/toggle_plugin_ribbon_icon.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "smart_env.config.js": {
+      "bytes": 1151,
+      "imports": [
+        {
+          "path": "src/components/connections.js",
+          "kind": "import-statement",
+          "original": "./src/components/connections.js"
+        },
+        {
+          "path": "src/components/connections_result.js",
+          "kind": "import-statement",
+          "original": "./src/components/connections_result.js"
+        },
+        {
+          "path": "src/components/connections_results.js",
+          "kind": "import-statement",
+          "original": "./src/components/connections_results.js"
+        },
+        {
+          "path": "src/components/connections_v1.js",
+          "kind": "import-statement",
+          "original": "./src/components/connections_v1.js"
+        },
+        {
+          "path": "src/components/enhanced_model_settings.js",
+          "kind": "import-statement",
+          "original": "./src/components/enhanced_model_settings.js"
+        },
+        {
+          "path": "src/components/lookup.js",
+          "kind": "import-statement",
+          "original": "./src/components/lookup.js"
+        },
+        {
+          "path": "src/components/main_settings.js",
+          "kind": "import-statement",
+          "original": "./src/components/main_settings.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js": {
+      "bytes": 1376,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/smart_view.obsidian.js": {
+      "bytes": 4956,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/wait_for_env_to_load.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/connections_view.js": {
+      "bytes": 4403,
+      "imports": [
+        {
+          "path": "src/views/smart_view.obsidian.js",
+          "kind": "import-statement",
+          "original": "./smart_view.obsidian.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/sc_lookup.obsidian.js": {
+      "bytes": 653,
+      "imports": [
+        {
+          "path": "src/views/smart_view.obsidian.js",
+          "kind": "import-statement",
+          "original": "./smart_view.obsidian.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/smart_chat.obsidian.js": {
+      "bytes": 10649,
+      "imports": [
+        {
+          "path": "src/views/smart_view.obsidian.js",
+          "kind": "import-statement",
+          "original": "./smart_view.obsidian.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/sc_chatgpt.obsidian.js": {
+      "bytes": 2591,
+      "imports": [
+        {
+          "path": "src/views/smart_view.obsidian.js",
+          "kind": "import-statement",
+          "original": "./smart_view.obsidian.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/sc_private_chat.obsidian.js": {
+      "bytes": 1682,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js": {
+      "bytes": 2638,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/wait_for_env_to_load.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-actions/index.js": {
+      "bytes": 245,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/actions/lookup_context.js": {
+      "bytes": 8026,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/collections/smart_actions.js": {
+      "bytes": 234,
+      "imports": [
+        {
+          "path": "node_modules/smart-actions/index.js",
+          "kind": "import-statement",
+          "original": "smart-actions"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/actions/lookup_context.js",
+          "kind": "import-statement",
+          "original": "../actions/lookup_context.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/index.js": {
+      "bytes": 194,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/utils/ajson_merge.js": {
+      "bytes": 971,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-collections/adapters/ajson_single_file.js": {
+      "bytes": 10144,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/adapters/ajson_multi_file.js",
+          "kind": "import-statement",
+          "original": "./ajson_multi_file.js"
+        },
+        {
+          "path": "node_modules/smart-collections/utils/ajson_merge.js",
+          "kind": "import-statement",
+          "original": "../utils/ajson_merge.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/utils/add_thread_item.js": {
+      "bytes": 2635,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/utils/self_referential_keywords.js": {
+      "bytes": 1128,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/ScTranslations.json",
+          "kind": "import-statement",
+          "original": "./ScTranslations.json",
+          "with": {
+            "type": "json"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-utils/file_tree.js": {
+      "bytes": 3226,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/replace_folder_tree_var.js": {
+      "bytes": 414,
+      "imports": [
+        {
+          "path": "node_modules/smart-utils/file_tree.js",
+          "kind": "import-statement",
+          "original": "smart-utils/file_tree.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/items/smart_chat_thread.js": {
+      "bytes": 4727,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/index.js",
+          "kind": "import-statement",
+          "original": "smart-collections"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/add_thread_item.js",
+          "kind": "import-statement",
+          "original": "../utils/add_thread_item.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/self_referential_keywords.js",
+          "kind": "import-statement",
+          "original": "../utils/self_referential_keywords.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/replace_folder_tree_var.js",
+          "kind": "import-statement",
+          "original": "smart-context-obsidian/src/utils/replace_folder_tree_var.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/collections/smart_chat_threads.js": {
+      "bytes": 4165,
+      "imports": [
+        {
+          "path": "node_modules/smart-collections/index.js",
+          "kind": "import-statement",
+          "original": "smart-collections"
+        },
+        {
+          "path": "node_modules/smart-collections/adapters/ajson_single_file.js",
+          "kind": "import-statement",
+          "original": "smart-collections/adapters/ajson_single_file.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/items/smart_chat_thread.js",
+          "kind": "import-statement",
+          "original": "../items/smart_chat_thread.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/self_referential_keywords.js",
+          "kind": "import-statement",
+          "original": "../utils/self_referential_keywords.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-completions/index.js": {
+      "bytes": 411,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-completions/utils/insert_user_message.js": {
+      "bytes": 1691,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-completions/adapters/_adapter.js": {
+      "bytes": 979,
+      "imports": [
+        {
+          "path": "node_modules/smart-completions/utils/insert_user_message.js",
+          "kind": "import-statement",
+          "original": "../utils/insert_user_message.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/adapters/smart-completions/thread.js": {
+      "bytes": 3154,
+      "imports": [
+        {
+          "path": "node_modules/smart-completions/adapters/_adapter.js",
+          "kind": "import-statement",
+          "original": "smart-completions/adapters/_adapter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/collections/smart_completions.js": {
+      "bytes": 265,
+      "imports": [
+        {
+          "path": "node_modules/smart-completions/index.js",
+          "kind": "import-statement",
+          "original": "smart-completions"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/adapters/smart-completions/thread.js",
+          "kind": "import-statement",
+          "original": "../adapters/smart-completions/thread.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-contexts/index.js": {
+      "bytes": 208,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/collections/smart_contexts.js": {
+      "bytes": 82,
+      "imports": [
+        {
+          "path": "node_modules/smart-contexts/index.js",
+          "kind": "import-statement",
+          "original": "smart-contexts"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/items/smart_action.js": {
+      "bytes": 71,
+      "imports": [
+        {
+          "path": "node_modules/smart-actions/index.js",
+          "kind": "import-statement",
+          "original": "smart-actions"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/chat.css": {
+      "bytes": 2549,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-chat-obsidian/src/chat_history_modal.js": {
+      "bytes": 2362,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js",
+          "kind": "import-statement",
+          "original": "./smart_chat.obsidian.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/chat.js": {
+      "bytes": 7815,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/chat.css",
+          "kind": "import-statement",
+          "original": "./chat.css",
+          "with": {
+            "type": "css"
+          }
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/chat_history_modal.js",
+          "kind": "import-statement",
+          "original": "../chat_history_modal.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/modals/story.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/modals/story.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/utils/chat_context_utils.js": {
+      "bytes": 634,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-file-system/utils/match_glob.js": {
+      "bytes": 758,
+      "imports": [
+        {
+          "path": "node_modules/smart-file-system/utils/glob_to_regex.js",
+          "kind": "import-statement",
+          "original": "./glob_to_regex.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-file-system/utils/ignore.js": {
+      "bytes": 8405,
+      "imports": [
+        {
+          "path": "node_modules/smart-file-system/utils/match_glob.js",
+          "kind": "import-statement",
+          "original": "./match_glob.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_all_leaves.js": {
+      "bytes": 391,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_all_open_file_paths.js": {
+      "bytes": 496,
+      "imports": [
+        {
+          "path": "node_modules/smart-file-system/utils/ignore.js",
+          "kind": "import-statement",
+          "original": "smart-file-system/utils/ignore.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_all_leaves.js",
+          "kind": "import-statement",
+          "original": "./get_all_leaves.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/is_leaf_visible.js": {
+      "bytes": 455,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_visible_open_files.js": {
+      "bytes": 576,
+      "imports": [
+        {
+          "path": "node_modules/smart-file-system/utils/ignore.js",
+          "kind": "import-statement",
+          "original": "smart-file-system/utils/ignore"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_all_leaves.js",
+          "kind": "import-statement",
+          "original": "./get_all_leaves"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/is_leaf_visible.js",
+          "kind": "import-statement",
+          "original": "./is_leaf_visible"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/send_context_changed_event.js": {
+      "bytes": 221,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/get_editor_selection.js": {
+      "bytes": 335,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_selected_text.js": {
+      "bytes": 450,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/get_editor_selection.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/get_editor_selection.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_block_suggestions.js": {
+      "bytes": 1660,
+      "imports": [
+        {
+          "path": "node_modules/smart-blocks/utils/get_block_display_name.js",
+          "kind": "import-statement",
+          "original": "smart-blocks/utils/get_block_display_name.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_all_tags.js": {
+      "bytes": 308,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/get_files_with_tag.js": {
+      "bytes": 626,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/views/context_selector_modal.js": {
+      "bytes": 15511,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_all_open_file_paths.js",
+          "kind": "import-statement",
+          "original": "../utils/get_all_open_file_paths.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_visible_open_files.js",
+          "kind": "import-statement",
+          "original": "../utils/get_visible_open_files.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/send_context_changed_event.js",
+          "kind": "import-statement",
+          "original": "../utils/send_context_changed_event.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_selected_text.js",
+          "kind": "import-statement",
+          "original": "../utils/get_selected_text.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_block_suggestions.js",
+          "kind": "import-statement",
+          "original": "../utils/get_block_suggestions.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_all_tags.js",
+          "kind": "import-statement",
+          "original": "../utils/get_all_tags.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/get_files_with_tag.js",
+          "kind": "import-statement",
+          "original": "../utils/get_files_with_tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/components/context_builder.css": {
+      "bytes": 1050,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-chat-obsidian/src/components/chat_context_builder.js": {
+      "bytes": 6778,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/chat_context_utils.js",
+          "kind": "import-statement",
+          "original": "../utils/chat_context_utils.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/views/context_selector_modal.js",
+          "kind": "import-statement",
+          "original": "smart-context-obsidian/src/views/context_selector_modal.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/context_builder.css",
+          "kind": "import-statement",
+          "original": "smart-context-obsidian/src/components/context_builder.css",
+          "with": {
+            "type": "css"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/chat_model_settings.js": {
+      "bytes": 272,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/chat_thread_settings.js": {
+      "bytes": 169,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/completion.css": {
+      "bytes": 2684,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-chat-obsidian/src/components/completion.js": {
+      "bytes": 9026,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/completion.css",
+          "kind": "import-statement",
+          "original": "./completion.css",
+          "with": {
+            "type": "css"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/confirm_delete.js": {
+      "bytes": 3382,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js",
+          "kind": "import-statement",
+          "original": "../smart_chat.obsidian.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/message_action.js": {
+      "bytes": 3560,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/obsidian-smart-env/utils/open_note.js": {
+      "bytes": 1803,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/message_assistant.js": {
+      "bytes": 4606,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/open_note.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/open_note.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/message_model_info.js": {
+      "bytes": 1989,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/message_system.css": {
+      "bytes": 1332,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-chat-obsidian/src/components/message_system.js": {
+      "bytes": 3447,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/message_system.css",
+          "kind": "import-statement",
+          "original": "./message_system.css",
+          "with": {
+            "type": "css"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/message_user.js": {
+      "bytes": 1506,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/overlay_requires_settings.js": {
+      "bytes": 2641,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/thread.css": {
+      "bytes": 4950,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-chat-obsidian/src/utils/insert_text_in_chunks.js": {
+      "bytes": 2351,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/utils/add_items_to_current_context.js": {
+      "bytes": 1635,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/utils/parse_dropped_data.js": {
+      "bytes": 3382,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/variable_utils.js": {
+      "bytes": 884,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/components/thread.js": {
+      "bytes": 11704,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/thread.css",
+          "kind": "import-statement",
+          "original": "./thread.css",
+          "with": {
+            "type": "css"
+          }
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/self_referential_keywords.js",
+          "kind": "import-statement",
+          "original": "../utils/self_referential_keywords.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/insert_text_in_chunks.js",
+          "kind": "import-statement",
+          "original": "../utils/insert_text_in_chunks.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/views/context_selector_modal.js",
+          "kind": "import-statement",
+          "original": "smart-context-obsidian/src/views/context_selector_modal.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/add_items_to_current_context.js",
+          "kind": "import-statement",
+          "original": "../utils/add_items_to_current_context.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/utils/parse_dropped_data.js",
+          "kind": "import-statement",
+          "original": "../utils/parse_dropped_data.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/variable_utils.js",
+          "kind": "import-statement",
+          "original": "./variable_utils.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/send_context_changed_event.js",
+          "kind": "import-statement",
+          "original": "smart-context-obsidian/src/utils/send_context_changed_event.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/smart_env.config.js": {
+      "bytes": 2485,
+      "imports": [
+        {
+          "path": "node_modules/smart-chat-obsidian/src/collections/smart_actions.js",
+          "kind": "import-statement",
+          "original": "./src/collections/smart_actions.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/collections/smart_chat_threads.js",
+          "kind": "import-statement",
+          "original": "./src/collections/smart_chat_threads.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/collections/smart_completions.js",
+          "kind": "import-statement",
+          "original": "./src/collections/smart_completions.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/collections/smart_contexts.js",
+          "kind": "import-statement",
+          "original": "./src/collections/smart_contexts.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/items/smart_action.js",
+          "kind": "import-statement",
+          "original": "./src/items/smart_action.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/items/smart_chat_thread.js",
+          "kind": "import-statement",
+          "original": "./src/items/smart_chat_thread.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/chat.js",
+          "kind": "import-statement",
+          "original": "./src/components/chat.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/chat_context_builder.js",
+          "kind": "import-statement",
+          "original": "./src/components/chat_context_builder.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/chat_model_settings.js",
+          "kind": "import-statement",
+          "original": "./src/components/chat_model_settings.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/chat_thread_settings.js",
+          "kind": "import-statement",
+          "original": "./src/components/chat_thread_settings.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/completion.js",
+          "kind": "import-statement",
+          "original": "./src/components/completion.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/confirm_delete.js",
+          "kind": "import-statement",
+          "original": "./src/components/confirm_delete.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/message_action.js",
+          "kind": "import-statement",
+          "original": "./src/components/message_action.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/message_assistant.js",
+          "kind": "import-statement",
+          "original": "./src/components/message_assistant.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/message_model_info.js",
+          "kind": "import-statement",
+          "original": "./src/components/message_model_info.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/message_system.js",
+          "kind": "import-statement",
+          "original": "./src/components/message_system.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/message_user.js",
+          "kind": "import-statement",
+          "original": "./src/components/message_user.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/overlay_requires_settings.js",
+          "kind": "import-statement",
+          "original": "./src/components/overlay_requires_settings.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/components/thread.js",
+          "kind": "import-statement",
+          "original": "./src/components/thread.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/components/context_builder.js": {
+      "bytes": 2003,
+      "imports": [
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/context_builder.css",
+          "kind": "import-statement",
+          "original": "./context_builder.css",
+          "with": {
+            "type": "css"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/components/context_stats.js": {
+      "bytes": 938,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/build_context_item_li.js": {
+      "bytes": 1369,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/build_context_items_tree_html.js": {
+      "bytes": 6395,
+      "imports": [
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/build_context_item_li.js",
+          "kind": "import-statement",
+          "original": "./build_context_item_li.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/components/context_tree.css": {
+      "bytes": 1616,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-sources/actions/get_links_to_depth.js": {
+      "bytes": 3335,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/send_context_updated_event.js": {
+      "bytes": 206,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/is_image_path.js": {
+      "bytes": 80,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/remove_context_path.js": {
+      "bytes": 487,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/components/context_tree.js": {
+      "bytes": 7584,
+      "imports": [
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/build_context_items_tree_html.js",
+          "kind": "import-statement",
+          "original": "../utils/build_context_items_tree_html.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/context_tree.css",
+          "kind": "import-statement",
+          "original": "./context_tree.css",
+          "with": {
+            "type": "css"
+          }
+        },
+        {
+          "path": "node_modules/smart-sources/actions/get_links_to_depth.js",
+          "kind": "import-statement",
+          "original": "smart-sources/actions/get_links_to_depth.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/open_note.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/open_note.js"
+        },
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/views/context_selector_modal.js",
+          "kind": "import-statement",
+          "original": "../views/context_selector_modal.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/register_block_hover_popover.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/register_block_hover_popover.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/send_context_updated_event.js",
+          "kind": "import-statement",
+          "original": "../utils/send_context_updated_event.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/is_image_path.js",
+          "kind": "import-statement",
+          "original": "../utils/is_image_path.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/remove_context_path.js",
+          "kind": "import-statement",
+          "original": "../utils/remove_context_path.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/show_stats_notice.js": {
+      "bytes": 669,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/utils/copy_to_clipboard.js": {
+      "bytes": 775,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "electron",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/src/components/copy_to_clipboard_button.js": {
+      "bytes": 690,
+      "imports": [
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/show_stats_notice.js",
+          "kind": "import-statement",
+          "original": "../utils/show_stats_notice.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/utils/copy_to_clipboard.js",
+          "kind": "import-statement",
+          "original": "../utils/copy_to_clipboard.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-context-obsidian/smart_env.config.js": {
+      "bytes": 737,
+      "imports": [
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/context_builder.js",
+          "kind": "import-statement",
+          "original": "./src/components/context_builder.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/context_stats.js",
+          "kind": "import-statement",
+          "original": "./src/components/context_stats.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/context_tree.js",
+          "kind": "import-statement",
+          "original": "./src/components/context_tree.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/src/components/copy_to_clipboard_button.js",
+          "kind": "import-statement",
+          "original": "./src/components/copy_to_clipboard_button.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/sc_settings_tab.js": {
+      "bytes": 1324,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/wait_for_env_to_load.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-notices/notices.js": {
+      "bytes": 4705,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/smart-notices/smart_notices.js": {
+      "bytes": 7967,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-notices/notices.js",
+          "kind": "import-statement",
+          "original": "./notices.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/connections_modal.js": {
+      "bytes": 1815,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/smart-chat-obsidian/src/settings_tab.css": {
+      "bytes": 267,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "css"
+      }
+    },
+    "node_modules/smart-chat-obsidian/src/settings_tab.js": {
+      "bytes": 3381,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/settings_tab.css",
+          "kind": "import-statement",
+          "original": "./settings_tab.css",
+          "with": {
+            "type": "css"
+          }
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js",
+          "kind": "import-statement",
+          "original": "./smart_chat.obsidian.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "releases/3.0.0.md": {
+      "bytes": 21159,
+      "imports": [],
+      "format": "esm",
+      "with": {
+        "type": "markdown"
+      }
+    },
+    "src/views/release_notes_view.js": {
+      "bytes": 2282,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "releases/3.0.0.md",
+          "kind": "import-statement",
+          "original": "../../releases/3.0.0.md",
+          "with": {
+            "type": "markdown"
+          }
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/create_deep_proxy.js": {
+      "bytes": 480,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/get_random_connection.js": {
+      "bytes": 1151,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/add_icons.js": {
+      "bytes": 858,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/determine_installed_at.js": {
+      "bytes": 514,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/build_connections_codeblock.js": {
+      "bytes": 350,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/modals/claude_cli_setup_modal.js": {
+      "bytes": 10145,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/first_run_manager.js": {
+      "bytes": 11655,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/modals/claude_cli_setup_modal.js",
+          "kind": "import-statement",
+          "original": "../modals/claude_cli_setup_modal.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/modals/migration_confirmation_modal.js": {
+      "bytes": 10970,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/migration_manager.js": {
+      "bytes": 14003,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/modals/migration_confirmation_modal.js",
+          "kind": "import-statement",
+          "original": "../modals/migration_confirmation_modal.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/index.js": {
+      "bytes": 16935,
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/index.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env"
+        },
+        {
+          "path": "src/smart_env.config.js",
+          "kind": "import-statement",
+          "original": "./smart_env.config.js"
+        },
+        {
+          "path": "smart_env.config.js",
+          "kind": "import-statement",
+          "original": "../smart_env.config.js"
+        },
+        {
+          "path": "src/views/connections_view.js",
+          "kind": "import-statement",
+          "original": "./views/connections_view.js"
+        },
+        {
+          "path": "src/views/sc_lookup.obsidian.js",
+          "kind": "import-statement",
+          "original": "./views/sc_lookup.obsidian.js"
+        },
+        {
+          "path": "src/views/smart_chat.obsidian.js",
+          "kind": "import-statement",
+          "original": "./views/smart_chat.obsidian.js"
+        },
+        {
+          "path": "src/views/sc_chatgpt.obsidian.js",
+          "kind": "import-statement",
+          "original": "./views/sc_chatgpt.obsidian.js"
+        },
+        {
+          "path": "src/views/sc_private_chat.obsidian.js",
+          "kind": "import-statement",
+          "original": "./views/sc_private_chat.obsidian.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js",
+          "kind": "import-statement",
+          "original": "smart-chat-obsidian/src/smart_chat.obsidian.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/smart_env.config.js",
+          "kind": "import-statement",
+          "original": "smart-chat-obsidian/smart_env.config.js"
+        },
+        {
+          "path": "node_modules/smart-context-obsidian/smart_env.config.js",
+          "kind": "import-statement",
+          "original": "smart-context-obsidian/smart_env.config.js"
+        },
+        {
+          "path": "src/sc_settings_tab.js",
+          "kind": "import-statement",
+          "original": "./sc_settings_tab.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/utils/open_note.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/utils/open_note.js"
+        },
+        {
+          "path": "node_modules/smart-notices/smart_notices.js",
+          "kind": "import-statement",
+          "original": "smart-notices/smart_notices.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/index.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env"
+        },
+        {
+          "path": "src/views/connections_modal.js",
+          "kind": "import-statement",
+          "original": "./views/connections_modal.js"
+        },
+        {
+          "path": "node_modules/smart-chat-obsidian/src/settings_tab.js",
+          "kind": "import-statement",
+          "original": "smart-chat-obsidian/src/settings_tab.js"
+        },
+        {
+          "path": "src/views/release_notes_view.js",
+          "kind": "import-statement",
+          "original": "./views/release_notes_view.js"
+        },
+        {
+          "path": "node_modules/obsidian-smart-env/modals/story.js",
+          "kind": "import-statement",
+          "original": "obsidian-smart-env/modals/story.js"
+        },
+        {
+          "path": "src/utils/create_deep_proxy.js",
+          "kind": "import-statement",
+          "original": "./utils/create_deep_proxy.js"
+        },
+        {
+          "path": "src/utils/get_random_connection.js",
+          "kind": "import-statement",
+          "original": "./utils/get_random_connection.js"
+        },
+        {
+          "path": "src/utils/add_icons.js",
+          "kind": "import-statement",
+          "original": "./utils/add_icons.js"
+        },
+        {
+          "path": "src/utils/toggle_plugin_ribbon_icon.js",
+          "kind": "import-statement",
+          "original": "./utils/toggle_plugin_ribbon_icon.js"
+        },
+        {
+          "path": "src/utils/determine_installed_at.js",
+          "kind": "import-statement",
+          "original": "./utils/determine_installed_at.js"
+        },
+        {
+          "path": "src/utils/build_connections_codeblock.js",
+          "kind": "import-statement",
+          "original": "./utils/build_connections_codeblock.js"
+        },
+        {
+          "path": "src/utils/first_run_manager.js",
+          "kind": "import-statement",
+          "original": "./utils/first_run_manager.js"
+        },
+        {
+          "path": "src/utils/migration_manager.js",
+          "kind": "import-statement",
+          "original": "./utils/migration_manager.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/main.js": {
+      "imports": [
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs/promises",
+          "kind": "dynamic-import",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "dynamic-import",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "dynamic-import",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "child_process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "electron",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "obsidian",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.js",
+      "inputs": {
+        "node_modules/obsidian-smart-env/node_modules/base64-js/index.js": {
+          "bytesInOutput": 1446
+        },
+        "src/index.js": {
+          "bytesInOutput": 8319
+        },
+        "node_modules/obsidian-smart-env/smart_env.js": {
+          "bytesInOutput": 8260
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-environment/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/is_plain_object.js": {
+          "bytesInOutput": 158
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/deep_merge_no_overwrite.js": {
+          "bytesInOutput": 545
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-environment/utils/merge_env_config.js": {
+          "bytesInOutput": 984
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-file-system/index.js": {
+          "bytesInOutput": 111
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-file-system/adapters/obsidian.js": {
+          "bytesInOutput": 4073
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/index.js": {
+          "bytesInOutput": 89
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/utils/empty.js": {
+          "bytesInOutput": 87
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/utils/replace_html.js": {
+          "bytesInOutput": 182
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/utils/replace_with_fragment.js": {
+          "bytesInOutput": 101
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/utils/safe_inner_html.js": {
+          "bytesInOutput": 152
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/adapters/_adapter.js": {
+          "bytesInOutput": 11081
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-view/adapters/obsidian.js": {
+          "bytesInOutput": 1128
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-entities/index.js": {
+          "bytesInOutput": 44
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/index.js": {
+          "bytesInOutput": 93
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/_adapter.js": {
+          "bytesInOutput": 1023
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/_file.js": {
+          "bytesInOutput": 534
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-collections/adapters/ajson_multi_file.js": {
+          "bytesInOutput": 4063
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/data/ajson_multi_file.js": {
+          "bytesInOutput": 66
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-utils/create_hash.js": {
+          "bytesInOutput": 709
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_adapter.js": {
+          "bytesInOutput": 695
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/parsers/markdown.js": {
+          "bytesInOutput": 2511
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/_file.js": {
+          "bytesInOutput": 3175
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_links.js": {
+          "bytesInOutput": 557
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/parse_frontmatter.js": {
+          "bytesInOutput": 1071
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_tags.js": {
+          "bytesInOutput": 114
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/markdown_source.js": {
+          "bytesInOutput": 2176
+        },
+        "node_modules/obsidian-smart-env/adapters/smart-sources/obsidian_markdown.js": {
+          "bytesInOutput": 1129
+        },
+        "node_modules/obsidian-smart-env/adapters/smart-sources/bases.js": {
+          "bytesInOutput": 69
+        },
+        "node_modules/obsidian-smart-env/adapters/smart-sources/excalidraw.js": {
+          "bytesInOutput": 635
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/index.js": {
+          "bytesInOutput": 93
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/data/ajson_multi_file.js": {
+          "bytesInOutput": 880
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/_adapter.js": {
+          "bytesInOutput": 446
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_line_range.js": {
+          "bytesInOutput": 62
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/adapters/markdown_block.js": {
+          "bytesInOutput": 1786
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/components/settings.js": {
+          "bytesInOutput": 1724
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-model/components/settings.js": {
+          "bytesInOutput": 295
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/index.js": {
+          "bytesInOutput": 95
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-model/adapters/_adapter.js": {
+          "bytesInOutput": 1306
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_adapter.js": {
+          "bytesInOutput": 1078
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-http-request/index.js": {
+          "bytesInOutput": 86
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/_adapter.js": {
+          "bytesInOutput": 366
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-http-request/adapters/fetch.js": {
+          "bytesInOutput": 373
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_api.js": {
+          "bytesInOutput": 2575
+        },
+        "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/chunk-ZDNLBERF.js": {
+          "bytesInOutput": 2451
+        },
+        "node_modules/obsidian-smart-env/node_modules/js-tiktoken/dist/lite.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/utils/fetch_cache.js": {
+          "bytesInOutput": 677
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/openai.js": {
+          "bytesInOutput": 3104
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/_message.js": {
+          "bytesInOutput": 1043
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/iframe.js": {
+          "bytesInOutput": 1730
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/connectors/transformers_iframe.js": {
+          "bytesInOutput": 32317
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/transformers.js": {
+          "bytesInOutput": 2925
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/transformers_iframe.js": {
+          "bytesInOutput": 551
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/ollama.js": {
+          "bytesInOutput": 3730
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/cl100k_base.json": {
+          "bytesInOutput": 1090794
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-embed-model/adapters/gemini.js": {
+          "bytesInOutput": 2566
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/index.js": {
+          "bytesInOutput": 94
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/streamer.js": {
+          "bytesInOutput": 2776
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_adapter.js": {
+          "bytesInOutput": 968
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_api.js": {
+          "bytesInOutput": 10926
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/anthropic.js": {
+          "bytesInOutput": 7948
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/openai.js": {
+          "bytesInOutput": 1674
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/azure.js": {
+          "bytesInOutput": 2151
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/google.js": {
+          "bytesInOutput": 7562
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/open_router.js": {
+          "bytesInOutput": 1778
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/lm_studio.js": {
+          "bytesInOutput": 2068
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/ollama.js": {
+          "bytesInOutput": 5158
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/_custom.js": {
+          "bytesInOutput": 2056
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/groq.js": {
+          "bytesInOutput": 1129
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/xai.js": {
+          "bytesInOutput": 880
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/deepseek.js": {
+          "bytesInOutput": 1117
+        },
+        "node_modules/obsidian-smart-env/default.config.js": {
+          "bytesInOutput": 1467
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-completions/index.js": {
+          "bytesInOutput": 57
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-utils/sort_by_score.js": {
+          "bytesInOutput": 74
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-entities/actions/find_connections.js": {
+          "bytesInOutput": 450
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-collections/utils/get_item_display_name.js": {
+          "bytesInOutput": 106
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/utils/get_block_display_name.js": {
+          "bytesInOutput": 159
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/smart_block.js": {
+          "bytesInOutput": 3885
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/components/source.js": {
+          "bytesInOutput": 508
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-utils/geom.js": {
+          "bytesInOutput": 556
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/actions/find_connections.js": {
+          "bytesInOutput": 805
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-sources/smart_source.js": {
+          "bytesInOutput": 5745
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-blocks/content_parsers/parse_blocks.js": {
+          "bytesInOutput": 758
+        },
+        "node_modules/obsidian-smart-env/utils/format_collection_name.js": {
+          "bytesInOutput": 78
+        },
+        "node_modules/obsidian-smart-env/components/collection_settings.js": {
+          "bytesInOutput": 683
+        },
+        "node_modules/obsidian-smart-env/modals/exclude_folders_fuzzy.js": {
+          "bytesInOutput": 522
+        },
+        "node_modules/obsidian-smart-env/modals/excluded_sources.js": {
+          "bytesInOutput": 402
+        },
+        "node_modules/obsidian-smart-env/modals/env_stats.js": {
+          "bytesInOutput": 450
+        },
+        "node_modules/obsidian-smart-env/modals/exclude_files_fuzzy.js": {
+          "bytesInOutput": 646
+        },
+        "node_modules/obsidian-smart-env/components/env_settings.css": {
+          "bytesInOutput": 460
+        },
+        "node_modules/obsidian-smart-env/components/env_settings.js": {
+          "bytesInOutput": 7027
+        },
+        "node_modules/obsidian-smart-env/components/env_stats.js": {
+          "bytesInOutput": 1934
+        },
+        "node_modules/obsidian-smart-env/components/lean_coffee_callout.js": {
+          "bytesInOutput": 1675
+        },
+        "node_modules/obsidian-smart-env/components/muted_notices.js": {
+          "bytesInOutput": 894
+        },
+        "node_modules/obsidian-smart-env/components/source_inspector.css": {
+          "bytesInOutput": 461
+        },
+        "node_modules/obsidian-smart-env/components/source_inspector.js": {
+          "bytesInOutput": 2443
+        },
+        "node_modules/obsidian-smart-env/components/supporter_callout.js": {
+          "bytesInOutput": 2756
+        },
+        "node_modules/obsidian-smart-env/components/user_agreement_callout.js": {
+          "bytesInOutput": 1304
+        },
+        "node_modules/obsidian-smart-env/smart_env.config.js": {
+          "bytesInOutput": 210
+        },
+        "node_modules/obsidian-smart-env/utils/add_icons.js": {
+          "bytesInOutput": 1113
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-notices/smart_notices.js": {
+          "bytesInOutput": 2714
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-notices/notices.js": {
+          "bytesInOutput": 3405
+        },
+        "node_modules/obsidian-smart-env/styles.css": {
+          "bytesInOutput": 305
+        },
+        "node_modules/obsidian-smart-env/sc_oauth.js": {
+          "bytesInOutput": 1324
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-plugins-obsidian/utils.js": {
+          "bytesInOutput": 212
+        },
+        "node_modules/obsidian-smart-env/utils/open_url_externally.js": {
+          "bytesInOutput": 112
+        },
+        "node_modules/obsidian-smart-env/utils/register_status_bar_context_menu.js": {
+          "bytesInOutput": 981
+        },
+        "node_modules/obsidian-smart-env/views/source_inspector.js": {
+          "bytesInOutput": 382
+        },
+        "node_modules/obsidian-smart-env/node_modules/smart-utils/file_tree.js": {
+          "bytesInOutput": 995
+        },
+        "node_modules/obsidian-smart-env/utils/replace_folder_tree_var.js": {
+          "bytesInOutput": 170
+        },
+        "node_modules/obsidian-smart-env/utils/replace_folders_top_var.js": {
+          "bytesInOutput": 172
+        },
+        "node_modules/obsidian-smart-env/utils/replace_recent_n_var.js": {
+          "bytesInOutput": 340
+        },
+        "node_modules/obsidian-smart-env/utils/replace_vault_tags_var.js": {
+          "bytesInOutput": 191
+        },
+        "node_modules/obsidian-smart-env/utils/register_completion_variable_adapter_replacements.js": {
+          "bytesInOutput": 299
+        },
+        "node_modules/smart-collections/adapters/_adapter.js": {
+          "bytesInOutput": 1023
+        },
+        "node_modules/smart-collections/adapters/_file.js": {
+          "bytesInOutput": 534
+        },
+        "node_modules/smart-collections/adapters/ajson_multi_file.js": {
+          "bytesInOutput": 4063
+        },
+        "node_modules/smart-file-system/utils/glob_to_regex.js": {
+          "bytesInOutput": 1278
+        },
+        "node_modules/smart-file-system/utils/fuzzy_search.js": {
+          "bytesInOutput": 307
+        },
+        "node_modules/smart-file-system/smart_fs.js": {
+          "bytesInOutput": 4105
+        },
+        "node_modules/smart-file-system/adapters/obsidian.js": {
+          "bytesInOutput": 4073
+        },
+        "node_modules/smart-view/utils/empty.js": {
+          "bytesInOutput": 87
+        },
+        "node_modules/smart-view/utils/replace_html.js": {
+          "bytesInOutput": 182
+        },
+        "node_modules/smart-view/utils/replace_with_fragment.js": {
+          "bytesInOutput": 101
+        },
+        "node_modules/smart-view/utils/safe_inner_html.js": {
+          "bytesInOutput": 152
+        },
+        "node_modules/smart-utils/index.js": {
+          "bytesInOutput": 362
+        },
+        "node_modules/smart-view/smart_view.js": {
+          "bytesInOutput": 2325
+        },
+        "node_modules/smart-view/adapters/_adapter.js": {
+          "bytesInOutput": 11081
+        },
+        "node_modules/smart-view/adapters/obsidian.js": {
+          "bytesInOutput": 1128
+        },
+        "node_modules/smart-collections/components/settings.js": {
+          "bytesInOutput": 405
+        },
+        "src/components/enhanced_model_settings.js": {
+          "bytesInOutput": 5026
+        },
+        "node_modules/obsidian-smart-env/modals/story.js": {
+          "bytesInOutput": 741
+        },
+        "src/modals/connections_filter.js": {
+          "bytesInOutput": 485
+        },
+        "src/components/connections.js": {
+          "bytesInOutput": 3229
+        },
+        "src/components/lookup.js": {
+          "bytesInOutput": 2319
+        },
+        "src/components/connections_results.js": {
+          "bytesInOutput": 553
+        },
+        "src/views/smart_chat.js": {
+          "bytesInOutput": 4733
+        },
+        "node_modules/smart-chat-model/index.js": {
+          "bytesInOutput": 94
+        },
+        "node_modules/smart-http-request/index.js": {
+          "bytesInOutput": 86
+        },
+        "node_modules/smart-chat-model/streamer.js": {
+          "bytesInOutput": 2776
+        },
+        "node_modules/smart-model/adapters/_adapter.js": {
+          "bytesInOutput": 1306
+        },
+        "node_modules/smart-chat-model/adapters/_adapter.js": {
+          "bytesInOutput": 968
+        },
+        "node_modules/smart-http-request/adapters/_adapter.js": {
+          "bytesInOutput": 366
+        },
+        "node_modules/smart-http-request/adapters/fetch.js": {
+          "bytesInOutput": 373
+        },
+        "node_modules/smart-chat-model/adapters/_api.js": {
+          "bytesInOutput": 10926
+        },
+        "node_modules/smart-chat-model/adapters/anthropic.js": {
+          "bytesInOutput": 3759
+        },
+        "node_modules/smart-chat-model/adapters/google.js": {
+          "bytesInOutput": 4532
+        },
+        "node_modules/smart-chat-model/adapters/lm_studio.js": {
+          "bytesInOutput": 2068
+        },
+        "node_modules/smart-chat-model/adapters/ollama.js": {
+          "bytesInOutput": 5158
+        },
+        "node_modules/smart-chat-model/adapters/_custom.js": {
+          "bytesInOutput": 2056
+        },
+        "src/smart_env.config.js": {
+          "bytesInOutput": 1717
+        },
+        "node_modules/smart-entities/index.js": {
+          "bytesInOutput": 44
+        },
+        "node_modules/smart-sources/index.js": {
+          "bytesInOutput": 93
+        },
+        "node_modules/smart-chat-obsidian/src/utils/ScTranslations.json": {
+          "bytesInOutput": 14816
+        },
+        "smart-chat-v0/utils/self_referential_keywords.js": {
+          "bytesInOutput": 423
+        },
+        "smart-chat-v0/smart_threads.js": {
+          "bytesInOutput": 3323
+        },
+        "smart-chat-v0/components/thread.js": {
+          "bytesInOutput": 6751
+        },
+        "smart-chat-v0/utils/folder_references.js": {
+          "bytesInOutput": 539
+        },
+        "smart-chat-v0/utils/internal_links.js": {
+          "bytesInOutput": 321
+        },
+        "smart-chat-v0/components/error.js": {
+          "bytesInOutput": 2359
+        },
+        "smart-chat-v0/smart_thread.js": {
+          "bytesInOutput": 7498
+        },
+        "node_modules/smart-blocks/index.js": {
+          "bytesInOutput": 93
+        },
+        "smart-chat-v0/smart_messages.js": {
+          "bytesInOutput": 304
+        },
+        "smart-chat-v0/components/message.js": {
+          "bytesInOutput": 3573
+        },
+        "smart-chat-v0/components/context.js": {
+          "bytesInOutput": 2291
+        },
+        "smart-chat-v0/components/tool_calls.js": {
+          "bytesInOutput": 1402
+        },
+        "smart-chat-v0/components/system_message.js": {
+          "bytesInOutput": 1694
+        },
+        "smart-chat-v0/smart_message.js": {
+          "bytesInOutput": 5640
+        },
+        "smart-chat-v0/sc_thread.js": {
+          "bytesInOutput": 1626
+        },
+        "smart-chat-v0/adapters/_adapter.js": {
+          "bytesInOutput": 1009
+        },
+        "smart-chat-v0/adapters/json.js": {
+          "bytesInOutput": 760
+        },
+        "src/adapters/claude_code_cli_adapter.js": {
+          "bytesInOutput": 6032
+        },
+        "node_modules/smart-utils/sort_by_score.js": {
+          "bytesInOutput": 74
+        },
+        "node_modules/smart-utils/create_hash.js": {
+          "bytesInOutput": 710
+        },
+        "node_modules/smart-entities/actions/find_connections.js": {
+          "bytesInOutput": 451
+        },
+        "node_modules/smart-collections/utils/get_item_display_name.js": {
+          "bytesInOutput": 106
+        },
+        "node_modules/smart-blocks/utils/get_block_display_name.js": {
+          "bytesInOutput": 159
+        },
+        "node_modules/smart-blocks/smart_block.js": {
+          "bytesInOutput": 3885
+        },
+        "node_modules/smart-sources/components/source.js": {
+          "bytesInOutput": 508
+        },
+        "node_modules/smart-utils/geom.js": {
+          "bytesInOutput": 556
+        },
+        "node_modules/smart-sources/actions/find_connections.js": {
+          "bytesInOutput": 806
+        },
+        "node_modules/smart-sources/smart_source.js": {
+          "bytesInOutput": 5745
+        },
+        "src/components/connections_result.js": {
+          "bytesInOutput": 4050
+        },
+        "node_modules/obsidian-smart-env/utils/register_block_hover_popover.js": {
+          "bytesInOutput": 851
+        },
+        "src/utils/drag.js": {
+          "bytesInOutput": 290
+        },
+        "src/components/connections_v1.js": {
+          "bytesInOutput": 2252
+        },
+        "src/utils/toggle_plugin_ribbon_icon.js": {
+          "bytesInOutput": 548
+        },
+        "src/components/main_settings.js": {
+          "bytesInOutput": 4005
+        },
+        "smart_env.config.js": {
+          "bytesInOutput": 192
+        },
+        "src/views/smart_view.obsidian.js": {
+          "bytesInOutput": 2495
+        },
+        "node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js": {
+          "bytesInOutput": 760
+        },
+        "src/views/connections_view.js": {
+          "bytesInOutput": 2587
+        },
+        "src/views/sc_lookup.obsidian.js": {
+          "bytesInOutput": 398
+        },
+        "src/views/smart_chat.obsidian.js": {
+          "bytesInOutput": 6359
+        },
+        "src/views/sc_chatgpt.obsidian.js": {
+          "bytesInOutput": 1646
+        },
+        "src/views/sc_private_chat.obsidian.js": {
+          "bytesInOutput": 27
+        },
+        "node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js": {
+          "bytesInOutput": 1339
+        },
+        "node_modules/smart-actions/index.js": {
+          "bytesInOutput": 57
+        },
+        "node_modules/smart-chat-obsidian/src/actions/lookup_context.js": {
+          "bytesInOutput": 2773
+        },
+        "node_modules/smart-chat-obsidian/src/collections/smart_actions.js": {
+          "bytesInOutput": 49
+        },
+        "node_modules/smart-collections/index.js": {
+          "bytesInOutput": 86
+        },
+        "node_modules/smart-collections/utils/ajson_merge.js": {
+          "bytesInOutput": 372
+        },
+        "node_modules/smart-collections/adapters/ajson_single_file.js": {
+          "bytesInOutput": 2802
+        },
+        "node_modules/smart-chat-obsidian/src/utils/add_thread_item.js": {
+          "bytesInOutput": 359
+        },
+        "node_modules/smart-chat-obsidian/src/utils/self_referential_keywords.js": {
+          "bytesInOutput": 227
+        },
+        "node_modules/smart-utils/file_tree.js": {
+          "bytesInOutput": 995
+        },
+        "node_modules/smart-context-obsidian/src/utils/replace_folder_tree_var.js": {
+          "bytesInOutput": 179
+        },
+        "node_modules/smart-chat-obsidian/src/items/smart_chat_thread.js": {
+          "bytesInOutput": 2186
+        },
+        "node_modules/smart-chat-obsidian/src/collections/smart_chat_threads.js": {
+          "bytesInOutput": 2483
+        },
+        "node_modules/smart-completions/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/smart-completions/utils/insert_user_message.js": {
+          "bytesInOutput": 429
+        },
+        "node_modules/smart-completions/adapters/_adapter.js": {
+          "bytesInOutput": 378
+        },
+        "node_modules/smart-chat-obsidian/src/adapters/smart-completions/thread.js": {
+          "bytesInOutput": 1447
+        },
+        "node_modules/smart-chat-obsidian/src/collections/smart_completions.js": {
+          "bytesInOutput": 60
+        },
+        "node_modules/smart-contexts/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/smart-chat-obsidian/src/collections/smart_contexts.js": {
+          "bytesInOutput": 10
+        },
+        "node_modules/smart-chat-obsidian/src/components/chat.css": {
+          "bytesInOutput": 2459
+        },
+        "node_modules/smart-chat-obsidian/src/chat_history_modal.js": {
+          "bytesInOutput": 841
+        },
+        "node_modules/smart-chat-obsidian/src/components/chat.js": {
+          "bytesInOutput": 3290
+        },
+        "node_modules/smart-chat-obsidian/src/utils/chat_context_utils.js": {
+          "bytesInOutput": 84
+        },
+        "node_modules/smart-context-obsidian/src/views/context_selector_modal.js": {
+          "bytesInOutput": 7415
+        },
+        "node_modules/smart-file-system/utils/ignore.js": {
+          "bytesInOutput": 820
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_all_leaves.js": {
+          "bytesInOutput": 135
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_all_open_file_paths.js": {
+          "bytesInOutput": 131
+        },
+        "node_modules/smart-context-obsidian/src/utils/is_leaf_visible.js": {
+          "bytesInOutput": 171
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_visible_open_files.js": {
+          "bytesInOutput": 143
+        },
+        "node_modules/smart-context-obsidian/src/utils/send_context_changed_event.js": {
+          "bytesInOutput": 123
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_selected_text.js": {
+          "bytesInOutput": 118
+        },
+        "node_modules/obsidian-smart-env/utils/get_editor_selection.js": {
+          "bytesInOutput": 79
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_block_suggestions.js": {
+          "bytesInOutput": 585
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_all_tags.js": {
+          "bytesInOutput": 69
+        },
+        "node_modules/smart-context-obsidian/src/utils/get_files_with_tag.js": {
+          "bytesInOutput": 242
+        },
+        "node_modules/smart-context-obsidian/src/components/context_builder.css": {
+          "bytesInOutput": 960
+        },
+        "node_modules/smart-chat-obsidian/src/components/chat_context_builder.js": {
+          "bytesInOutput": 2827
+        },
+        "node_modules/smart-chat-obsidian/src/components/chat_model_settings.js": {
+          "bytesInOutput": 160
+        },
+        "node_modules/smart-chat-obsidian/src/components/chat_thread_settings.js": {
+          "bytesInOutput": 127
+        },
+        "node_modules/smart-chat-obsidian/src/components/completion.css": {
+          "bytesInOutput": 2594
+        },
+        "node_modules/smart-chat-obsidian/src/components/completion.js": {
+          "bytesInOutput": 4301
+        },
+        "node_modules/smart-chat-obsidian/src/components/confirm_delete.js": {
+          "bytesInOutput": 1592
+        },
+        "node_modules/smart-chat-obsidian/src/components/message_action.js": {
+          "bytesInOutput": 1135
+        },
+        "node_modules/smart-chat-obsidian/src/components/message_assistant.js": {
+          "bytesInOutput": 2316
+        },
+        "node_modules/obsidian-smart-env/utils/open_note.js": {
+          "bytesInOutput": 845
+        },
+        "node_modules/smart-chat-obsidian/src/components/message_model_info.js": {
+          "bytesInOutput": 943
+        },
+        "node_modules/smart-chat-obsidian/src/components/message_system.css": {
+          "bytesInOutput": 1242
+        },
+        "node_modules/smart-chat-obsidian/src/components/message_system.js": {
+          "bytesInOutput": 1700
+        },
+        "node_modules/smart-chat-obsidian/src/components/message_user.js": {
+          "bytesInOutput": 570
+        },
+        "node_modules/smart-chat-obsidian/src/components/overlay_requires_settings.js": {
+          "bytesInOutput": 1400
+        },
+        "node_modules/smart-chat-obsidian/src/components/thread.css": {
+          "bytesInOutput": 4860
+        },
+        "node_modules/smart-chat-obsidian/src/components/thread.js": {
+          "bytesInOutput": 5706
+        },
+        "node_modules/smart-chat-obsidian/src/utils/insert_text_in_chunks.js": {
+          "bytesInOutput": 737
+        },
+        "node_modules/smart-chat-obsidian/src/utils/add_items_to_current_context.js": {
+          "bytesInOutput": 435
+        },
+        "node_modules/smart-chat-obsidian/src/utils/parse_dropped_data.js": {
+          "bytesInOutput": 905
+        },
+        "node_modules/smart-chat-obsidian/src/components/variable_utils.js": {
+          "bytesInOutput": 435
+        },
+        "node_modules/smart-chat-obsidian/smart_env.config.js": {
+          "bytesInOutput": 406
+        },
+        "node_modules/smart-context-obsidian/src/components/context_builder.js": {
+          "bytesInOutput": 1063
+        },
+        "node_modules/smart-context-obsidian/src/components/context_stats.js": {
+          "bytesInOutput": 496
+        },
+        "node_modules/smart-context-obsidian/src/utils/build_context_item_li.js": {
+          "bytesInOutput": 655
+        },
+        "node_modules/smart-context-obsidian/src/utils/build_context_items_tree_html.js": {
+          "bytesInOutput": 1303
+        },
+        "node_modules/smart-context-obsidian/src/components/context_tree.css": {
+          "bytesInOutput": 1526
+        },
+        "node_modules/smart-sources/actions/get_links_to_depth.js": {
+          "bytesInOutput": 597
+        },
+        "node_modules/smart-context-obsidian/src/components/context_tree.js": {
+          "bytesInOutput": 2977
+        },
+        "node_modules/smart-context-obsidian/src/utils/send_context_updated_event.js": {
+          "bytesInOutput": 122
+        },
+        "node_modules/smart-context-obsidian/src/utils/is_image_path.js": {
+          "bytesInOutput": 49
+        },
+        "node_modules/smart-context-obsidian/src/utils/remove_context_path.js": {
+          "bytesInOutput": 145
+        },
+        "node_modules/smart-context-obsidian/src/utils/show_stats_notice.js": {
+          "bytesInOutput": 305
+        },
+        "node_modules/smart-context-obsidian/src/utils/copy_to_clipboard.js": {
+          "bytesInOutput": 357
+        },
+        "node_modules/smart-context-obsidian/src/components/copy_to_clipboard_button.js": {
+          "bytesInOutput": 369
+        },
+        "node_modules/smart-context-obsidian/smart_env.config.js": {
+          "bytesInOutput": 131
+        },
+        "src/sc_settings_tab.js": {
+          "bytesInOutput": 751
+        },
+        "node_modules/smart-notices/smart_notices.js": {
+          "bytesInOutput": 2714
+        },
+        "node_modules/smart-notices/notices.js": {
+          "bytesInOutput": 3405
+        },
+        "src/views/connections_modal.js": {
+          "bytesInOutput": 1137
+        },
+        "node_modules/smart-chat-obsidian/src/settings_tab.js": {
+          "bytesInOutput": 1543
+        },
+        "node_modules/smart-chat-obsidian/src/settings_tab.css": {
+          "bytesInOutput": 177
+        },
+        "src/views/release_notes_view.js": {
+          "bytesInOutput": 1202
+        },
+        "releases/3.0.0.md": {
+          "bytesInOutput": 20744
+        },
+        "src/utils/create_deep_proxy.js": {
+          "bytesInOutput": 185
+        },
+        "src/utils/get_random_connection.js": {
+          "bytesInOutput": 399
+        },
+        "src/utils/add_icons.js": {
+          "bytesInOutput": 823
+        },
+        "src/utils/determine_installed_at.js": {
+          "bytesInOutput": 79
+        },
+        "src/utils/build_connections_codeblock.js": {
+          "bytesInOutput": 85
+        },
+        "src/utils/first_run_manager.js": {
+          "bytesInOutput": 6048
+        },
+        "src/modals/claude_cli_setup_modal.js": {
+          "bytesInOutput": 7193
+        },
+        "src/utils/migration_manager.js": {
+          "bytesInOutput": 7100
+        },
+        "src/modals/migration_confirmation_modal.js": {
+          "bytesInOutput": 8502
+        }
+      },
+      "bytes": 1632654
+    }
+  }
+}

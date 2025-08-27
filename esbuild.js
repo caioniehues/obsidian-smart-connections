@@ -12,6 +12,39 @@ const roots = [
 build_smart_env_config(process.cwd(), roots);
 
 /**
+ * Comprehensively escapes CSS content for safe embedding in template literals.
+ * Handles all characters that could break template literal syntax:
+ * - Backslashes (must be first to avoid double-escaping)
+ * - Dollar signs (template literal expression markers)
+ * - Backticks (template literal delimiters)
+ * - Control characters (converted to Unicode escape sequences)
+ * 
+ * Preserves safe Unicode characters like arrows (▾, ▸) and other symbols.
+ * 
+ * @param {string} css - The CSS content to escape
+ * @returns {string} The escaped CSS content safe for template literals
+ */
+function escapeForTemplateLiteral(css) {
+  return css
+    // 1. Escape backslashes first (to avoid double-escaping later escapes)
+    .replace(/\\/g, '\\\\')
+    
+    // 2. Escape dollar signs (template literal expression markers)
+    .replace(/\$/g, '\\$')
+    
+    // 3. Escape backticks (template literal delimiters)
+    .replace(/`/g, '\\`')
+    
+    // 4. Convert dangerous control characters to Unicode escape sequences
+    // This handles characters that could break string parsing or cause issues
+    .replace(/[\x00-\x1F\x7F-\x9F]/g, (char) => {
+      const code = char.charCodeAt(0);
+      // Convert to Unicode escape sequence
+      return '\\u' + code.toString(16).padStart(4, '0');
+    });
+}
+
+/**
  * Plugin to process CSS files imported with an import attribute:
  *   import sheet from './style.css' with { type: 'css' };
  *
@@ -44,8 +77,8 @@ export function css_with_plugin() {
             css_content = result.code;
           }
 
-          // Escape any backticks in the CSS content to avoid breaking the template literal
-          const escaped_css = css_content.replace(/`/g, '\\`');
+          // Comprehensive escaping for template literal safety
+          const escaped_css = escapeForTemplateLiteral(css_content);
 
           // Create a JavaScript module that creates a CSSStyleSheet and exports it
           const js_module = `
@@ -104,6 +137,20 @@ if(release_notes_version_file_exists) {
   fs.writeFileSync(release_notes_path, updated_release_notes_text);
 }
 
+// Heavy external dependencies that should remain external to reduce bundle size
+// smart-context-obsidian FIXED - now bundled to eliminate runtime dependencies
+const HEAVY_EXTERNALS = [
+  'electron',
+  'obsidian',
+  'crypto',
+  '@xenova/transformers',
+  '@huggingface/transformers',
+  'http',
+  'url',
+  // Note: smart-context-obsidian was removed from externals to achieve local-first architecture
+  // This allows complete bundling and eliminates runtime dependency failures
+];
+
 // markdown plugin
 const markdown_plugin = {
   name: 'markdown',
@@ -132,15 +179,7 @@ esbuild.build({
   treeShaking: true,
   platform: 'node',
   preserveSymlinks: true,
-  external: [
-    'electron',
-    'obsidian',
-    'crypto',
-    '@xenova/transformers',
-    '@huggingface/transformers',
-    'http',
-    'url',
-  ],
+  external: HEAVY_EXTERNALS,
   define: {
     'process.env.DEFAULT_OPEN_ROUTER_API_KEY': JSON.stringify(process.env.DEFAULT_OPEN_ROUTER_API_KEY || ''),
   },

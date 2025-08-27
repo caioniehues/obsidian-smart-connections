@@ -143,11 +143,12 @@ var import_obsidian54 = __toESM(require("obsidian"), 1);
 var import_obsidian18 = require("obsidian");
 
 // node_modules/obsidian-smart-env/node_modules/smart-environment/index.js
-var SmartEnv = class {
+var SmartEnvironment = class {
   constructor(opts = {}) {
     this.opts = opts;
   }
 };
+var SmartEnv = SmartEnvironment;
 
 // node_modules/obsidian-smart-env/node_modules/smart-environment/utils/is_plain_object.js
 function is_plain_object(o) {
@@ -7857,17 +7858,13 @@ var SmartChatModelDeepseekResponseAdapter = class extends SmartChatModelResponse
 var import_obsidian12 = require("obsidian");
 
 // node_modules/obsidian-smart-env/node_modules/smart-completions/index.js
-var SmartCompletion = class {
-  constructor(opts = {}) {
-    this.opts = opts;
-  }
-};
 var SmartCompletions = class {
   constructor(opts = {}) {
     this.opts = opts;
   }
 };
-var smart_completions = new SmartCompletions();
+var smart_completions = SmartCompletions;
+var SmartCompletion = SmartCompletions;
 
 // node_modules/obsidian-smart-env/node_modules/smart-utils/sort_by_score.js
 function sort_by_score(a, b) {
@@ -21538,17 +21535,13 @@ var SmartChatView = class extends import_obsidian32.ItemView {
 };
 
 // node_modules/smart-actions/index.js
-var SmartAction = class {
-  constructor(opts = {}) {
-    this.opts = opts;
-  }
-};
 var SmartActions = class {
   constructor(opts = {}) {
     this.opts = opts;
   }
 };
-var smart_actions = new SmartActions();
+var smart_actions = SmartActions;
+var SmartAction = SmartActions;
 
 // node_modules/smart-chat-obsidian/src/actions/lookup_context.js
 var lookup_context_exports = {};
@@ -22262,7 +22255,7 @@ var SmartCompletions2 = class {
     this.opts = opts;
   }
 };
-var smart_completions2 = new SmartCompletions2();
+var smart_completions2 = SmartCompletions2;
 
 // node_modules/smart-completions/utils/insert_user_message.js
 function insert_user_message(request, user_message, opts = {}) {
@@ -22419,7 +22412,7 @@ var SmartContexts = class {
     this.opts = opts;
   }
 };
-var smart_contexts = new SmartContexts();
+var smart_contexts = SmartContexts;
 
 // node_modules/smart-chat-obsidian/src/collections/smart_contexts.js
 var smart_contexts_default = smart_contexts;
