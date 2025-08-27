@@ -68,6 +68,36 @@ npm install
 npm run build
 ```
 
+### Path Configuration (Cross-Platform Support)
+
+This plugin now includes **dynamic path resolution** to work seamlessly across different systems and environments:
+
+#### **Automatic Path Detection**
+- **Plugin Installation**: Automatically detects `.obsidian/plugins/smart-connections/`
+- **Development Mode**: Works from any working directory
+- **JSBrains Dependencies**: Finds sibling directories or node_modules automatically
+
+#### **Custom Path Configuration**
+Create a `.env` file in the plugin root to override paths (copy from `.env.example`):
+
+```bash
+# Override dependency paths for development
+JSBRAINS_PATH=/path/to/local/jsbrains
+OBSIDIAN_SMART_ENV_PATH=/path/to/local/obsidian-smart-env
+
+# Specify plugin installation path
+OBSIDIAN_PLUGIN_PATH=/path/to/vault/.obsidian/plugins/smart-connections
+
+# Enable debug logging
+DEBUG_PATH_RESOLUTION=true
+```
+
+#### **Benefits**
+- ✅ **Cross-platform compatibility** (Windows, macOS, Linux)
+- ✅ **No hardcoded paths** - works on any system
+- ✅ **Developer-friendly** - easy to set up local development
+- ✅ **Plugin distribution ready** - users can install anywhere
+
 ## 🎯 Quick Start Guide
 
 ### 1. Enable Smart Connections

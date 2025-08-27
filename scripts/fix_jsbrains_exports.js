@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
+import { getDependencyPath } from '../src/utils/path-resolver.js';
 
-const JSBRAINS_PATH = '/Users/caio.niehues/CodeProjects/jsbrains';
+const JSBRAINS_PATH = getDependencyPath('jsbrains');
 
 // Define packages and their required exports
 const packageExports = {

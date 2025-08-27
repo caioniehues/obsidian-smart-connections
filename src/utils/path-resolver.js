@@ -13,6 +13,59 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// Configuration loading flag
+let envConfigLoaded = false;
+
+/**
+ * Load environment variables from .env file if it exists
+ * This is called lazily when path resolution is first needed
+ */
+function loadEnvConfig() {
+  if (envConfigLoaded) return;
+  
+  try {
+    // Try to find and load .env file
+    const possibleEnvPaths = [
+      path.join(process.cwd(), '.env'),
+      path.join(__dirname, '..', '..', '.env'), // From utils back to project root
+    ];
+    
+    for (const envPath of possibleEnvPaths) {
+      if (fs.existsSync(envPath)) {
+        // Simple .env file parsing (basic key=value support)
+        const envContent = fs.readFileSync(envPath, 'utf8');
+        const envLines = envContent.split('\n');
+        
+        for (const line of envLines) {
+          const trimmedLine = line.trim();
+          if (trimmedLine && !trimmedLine.startsWith('#')) {
+            const [key, ...valueParts] = trimmedLine.split('=');
+            if (key && valueParts.length > 0) {
+              const value = valueParts.join('=').trim();
+              // Only set if not already set (don't override existing env vars)
+              if (!process.env[key]) {
+                process.env[key] = value.replace(/^["']|["']$/g, ''); // Remove quotes
+              }
+            }
+          }
+        }
+        
+        if (process.env.DEBUG_PATH_RESOLUTION) {
+          console.log('🔧 Path Resolver: Loaded .env configuration from:', envPath);
+        }
+        break;
+      }
+    }
+  } catch (error) {
+    // Silently ignore dotenv loading errors to avoid breaking plugin functionality
+    if (process.env.DEBUG_PATH_RESOLUTION) {
+      console.warn('🔧 Path Resolver: Could not load .env file:', error.message);
+    }
+  }
+  
+  envConfigLoaded = true;
+}
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -30,6 +83,9 @@ const pathCache = new Map();
  * @returns {string} Absolute path to plugin root directory
  */
 export function getPluginRoot() {
+  // Load environment configuration first
+  loadEnvConfig();
+  
   // Check cache first
   if (pathCache.has('pluginRoot')) {
     return pathCache.get('pluginRoot');
@@ -90,6 +146,9 @@ export function getPluginRoot() {
  * @throws {Error} If package cannot be found
  */
 export function getDependencyPath(packageName) {
+  // Load environment configuration first
+  loadEnvConfig();
+  
   // Check cache first
   const cacheKey = `dep:${packageName}`;
   if (pathCache.has(cacheKey)) {

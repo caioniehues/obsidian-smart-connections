@@ -286,3 +286,60 @@ Smart Connections now includes **intelligent migration** from external APIs:
 - **MigrationConfirmationModal**: User-friendly migration interface (`src/modals/migration_confirmation_modal.js`)
 - **FirstRunManager**: Guides new users through Claude CLI setup
 - **Enhanced Settings**: Local-first UI with clear privacy indicators
+
+## Path Resolution System
+
+This plugin implements **dynamic path resolution** to eliminate hardcoded paths and ensure cross-platform compatibility.
+
+### Key Components
+- **Path Resolver**: `src/utils/path-resolver.js` - Central path resolution utility
+- **Environment Configuration**: `.env` file support for custom paths
+- **Cross-Platform**: Works on Windows, macOS, Linux without modification
+
+### Usage Patterns
+
+#### In Test Files
+```javascript
+// Old (hardcoded)
+const JSBRAINS_PATH = '/Users/caio.niehues/CodeProjects/jsbrains';
+
+// New (dynamic)
+import { getDependencyPath } from '../utils/path-resolver.js';
+const JSBRAINS_PATH = getDependencyPath('jsbrains');
+```
+
+#### In Script Files
+```javascript
+// Old (hardcoded)
+const PROJECT_ROOT = '/Users/caio.niehues/CodeProjects/obsidian-smart-claude';
+
+// New (dynamic)
+import { getPluginRoot } from '../src/utils/path-resolver.js';
+const PROJECT_ROOT = getPluginRoot();
+```
+
+### Environment Configuration
+Create `.env` file for custom paths:
+```bash
+# Development overrides
+JSBRAINS_PATH=/custom/path/to/jsbrains
+OBSIDIAN_SMART_ENV_PATH=/custom/path/to/obsidian-smart-env
+
+# Plugin installation path
+OBSIDIAN_PLUGIN_PATH=/vault/.obsidian/plugins/smart-connections
+
+# Debug mode
+DEBUG_PATH_RESOLUTION=true
+```
+
+### Testing Path Resolution
+```bash
+# Test path resolution
+npm run test:path-resolution
+
+# Test with different environments  
+DEBUG_PATH_RESOLUTION=true npm test
+
+# Verify cross-platform compatibility
+npm run test:cross-platform
+```

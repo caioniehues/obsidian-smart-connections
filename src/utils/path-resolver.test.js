@@ -2,7 +2,7 @@ import test from 'ava';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import * as mockFs from 'mock-fs';
+import mockFs from 'mock-fs';
 
 // Import the module we're testing (will be created next)
 let pathResolver;
@@ -37,6 +37,8 @@ test('getPluginRoot returns current directory when no special context detected',
 
 test('getPluginRoot returns OBSIDIAN_PLUGIN_PATH when environment variable is set', t => {
   const testPath = '/mock/vault/.obsidian/plugins/smart-connections';
+  // Clear cache first to ensure clean state
+  pathResolver.clearCache();
   process.env.OBSIDIAN_PLUGIN_PATH = testPath;
   
   const result = pathResolver.getPluginRoot();
@@ -64,6 +66,9 @@ test('getPluginRoot detects Obsidian plugin installation by manifest.json', t =>
 });
 
 test('getDependencyPath finds local development dependencies', t => {
+  // Clear cache and set up mock
+  pathResolver.clearCache();
+  
   // Mock file system with development structure
   mockFs({
     '/project/obsidian-smart-claude': {
@@ -82,6 +87,9 @@ test('getDependencyPath finds local development dependencies', t => {
 });
 
 test('getDependencyPath finds dependencies in node_modules', t => {
+  // Clear cache and set up mock
+  pathResolver.clearCache();
+  
   // Mock file system with node_modules
   mockFs({
     '/project/plugin': {
@@ -133,6 +141,9 @@ test('getDependencyPath handles package names with hyphens correctly', t => {
 });
 
 test('getTestDataPath returns correct path relative to plugin root', t => {
+  // Clear cache and set up mock
+  pathResolver.clearCache();
+  
   mockFs({
     '/plugin/root': {
       'manifest.json': '{}',
@@ -149,6 +160,9 @@ test('getTestDataPath returns correct path relative to plugin root', t => {
 });
 
 test('resolveRelativePath resolves paths relative to plugin root', t => {
+  // Clear cache and set up mock
+  pathResolver.clearCache();
+  
   mockFs({
     '/my/plugin': {
       'manifest.json': '{}',
@@ -174,6 +188,8 @@ test('path resolution works with Windows-style paths', t => {
 });
 
 test('cache returns same result for repeated calls', t => {
+  // Clear cache first to ensure clean state
+  pathResolver.clearCache();
   process.env.JSBRAINS_PATH = '/cached/path';
   
   const result1 = pathResolver.getDependencyPath('jsbrains');
@@ -184,6 +200,8 @@ test('cache returns same result for repeated calls', t => {
 });
 
 test('clearCache resets cached paths', t => {
+  // Start with clean state
+  pathResolver.clearCache();
   process.env.JSBRAINS_PATH = '/first/path';
   
   const result1 = pathResolver.getDependencyPath('jsbrains');
@@ -206,6 +224,9 @@ test('validates paths to prevent directory traversal', t => {
 });
 
 test('handles paths with spaces correctly', t => {
+  // Clear cache and set up mock
+  pathResolver.clearCache();
+  
   mockFs({
     '/path with spaces/plugin': {
       'manifest.json': '{}'
@@ -219,6 +240,9 @@ test('handles paths with spaces correctly', t => {
 });
 
 test('handles unicode characters in paths', t => {
+  // Clear cache and set up mock
+  pathResolver.clearCache();
+  
   mockFs({
     '/用户/插件': {
       'manifest.json': '{}'

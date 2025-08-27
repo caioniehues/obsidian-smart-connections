@@ -1,8 +1,9 @@
 import test from 'ava';
 import fs from 'fs';
 import path from 'path';
+import { getDependencyPath } from '../utils/path-resolver.js';
 
-const JSBRAINS_PATH = '/Users/caio.niehues/CodeProjects/jsbrains';
+const JSBRAINS_PATH = getDependencyPath('jsbrains');
 
 const packages = [
   'smart-blocks',

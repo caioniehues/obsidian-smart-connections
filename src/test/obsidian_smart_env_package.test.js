@@ -1,8 +1,9 @@
 import test from 'ava';
 import fs from 'fs';
 import path from 'path';
+import { getDependencyPath } from '../utils/path-resolver.js';
 
-const PACKAGE_PATH = '/Users/caio.niehues/CodeProjects/obsidian-smart-env';
+const PACKAGE_PATH = getDependencyPath('obsidian-smart-env');
 
 test('obsidian-smart-env package.json exists and is valid', t => {
   const packageJsonPath = path.join(PACKAGE_PATH, 'package.json');
