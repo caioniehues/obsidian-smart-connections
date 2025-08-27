@@ -84,6 +84,7 @@ fs.copyFileSync(manifest_path, path.join(process.cwd(), 'dist', 'manifest.json')
 fs.copyFileSync(styles_path, path.join(process.cwd(), 'dist', 'styles.css'));
 
 const destination_vaults = process.env.DESTINATION_VAULTS?.split(',') || [];
+const use_symlinks = process.env.USE_SYMLINKS === 'true';
 
 // get first argument as entry point
 const entry_point = process.argv[2] || 'src/index.js';
@@ -148,17 +149,56 @@ esbuild.build({
 }).then(() => {
   console.log('Build complete');
   const release_file_paths = [manifest_path, styles_path, main_path];
+  
   for(let vault of destination_vaults) {
     const destDir = path.join(process.cwd(), '..', vault, '.obsidian', 'plugins', 'smart-connections');
-    console.log(`Copying files to ${destDir}`);
+    
+    // Ensure destination directory exists
     fs.mkdirSync(destDir, { recursive: true });
-    // create .hotreload file if it doesn't exist
+    
+    // Create .hotreload file if it doesn't exist
     if(!fs.existsSync(path.join(destDir, '.hotreload'))) {
       fs.writeFileSync(path.join(destDir, '.hotreload'), '');
     }
-    release_file_paths.forEach(file_path => {
-      fs.copyFileSync(file_path, path.join(destDir, path.basename(file_path)));
-    });
-    console.log(`Copied files to ${destDir}`);
+    
+    if(use_symlinks) {
+      console.log(`Creating symlinks in ${destDir}`);
+      
+      // Create symlinks for each file
+      release_file_paths.forEach(source_path => {
+        const dest_path = path.join(destDir, path.basename(source_path));
+        
+        // Remove existing file/symlink if it exists
+        try {
+          if(fs.existsSync(dest_path)) {
+            fs.unlinkSync(dest_path);
+          }
+        } catch(e) {
+          console.warn(`Could not remove existing file: ${dest_path}`);
+        }
+        
+        // Create symlink
+        try {
+          // Use relative path for better portability
+          const relative_source = path.relative(destDir, source_path);
+          fs.symlinkSync(relative_source, dest_path, 'file');
+          console.log(`  ✓ Symlinked ${path.basename(source_path)}`);
+        } catch(err) {
+          console.error(`Failed to create symlink for ${path.basename(source_path)}: ${err.message}`);
+          console.log(`  Falling back to copy for ${path.basename(source_path)}`);
+          fs.copyFileSync(source_path, dest_path);
+        }
+      });
+      
+      console.log(`Symlinks created in ${destDir}`);
+    } else {
+      console.log(`Copying files to ${destDir}`);
+      
+      release_file_paths.forEach(file_path => {
+        fs.copyFileSync(file_path, path.join(destDir, path.basename(file_path)));
+      });
+      
+      console.log(`Copied files to ${destDir}`);
+    }
   }
 }).catch(() => process.exit(1));
