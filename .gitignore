@@ -3,7 +3,8 @@
 .obsidian
 .smart-connections
 .vscode
-dist
+# dist (commented out for BRAT compatibility)
+# dist
 node_modules
 stylesheets
 ref
